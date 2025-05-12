@@ -10,5 +10,5 @@ We're using PIC18F27Q84
 ---
 ## Requirement
 
-MPlab X IDE v6.25
+MPlab X IDE v6.25 \n
 XC8 compiler for C99 standard
