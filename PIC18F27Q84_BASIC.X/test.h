@@ -28,13 +28,17 @@
 
 // This is a guard condition so that contents of this file are not included
 // more than once.  
-#ifndef XC_HEADER_TEMPLATE_H
-#define	XC_HEADER_TEMPLATE_H
+#ifndef TEST_H
+#define	TEST_H
 
 #include <xc.h>
 #include "mcc_generated_files/mcc.h"
+#include "can_bus.h"
+
 
 void led_test();
+void can_receive_test();
+void can_send_test();
 
 #ifdef	__cplusplus
 extern "C" {

@@ -46,6 +46,7 @@
 
 //#include "../Shared/test.h"
 #include "can_bus.h"
+#include "test.h"
 
 /*
  RC2 is led 0
@@ -74,6 +75,7 @@ void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
+    led_test();
 
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
@@ -97,7 +99,7 @@ void main(void)
         __delay_ms(50);
         //__delay_ms(4000);
         
-        can_send();
+        //can_send(0x444);
         //can_light_command();
     }
 }
@@ -145,30 +147,3 @@ void mppt_loop()
 	}
 }
  * */
-
-
-  
-
-
-
-void can_light_command()
-{
-    nrMsg = CAN1_ReceivedMessageCountGet();
-    if(nrMsg > 0) 
-    {
-        if(true == CAN1_Receive(&msg_rx))
-       {
-           for(uint8_t i=0; i<msg_rx.field.dlc; i++)
-           {
-             rx_buff[i] = msg_rx.data[i];
-           }
-           if(msg_rx.field.dlc>0)
-           {
-            led0_LAT = rx_buff[0]; //change with gpio for lights
-            led1_LAT = rx_buff[1]; //change with gpio for lights
-            led2_LAT = rx_buff[2]; //change with gpio for lights
-          }
-      }
-      nrMsg--;
-   }  
- }

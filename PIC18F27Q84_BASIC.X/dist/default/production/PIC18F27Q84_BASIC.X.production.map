@@ -4,12 +4,12 @@ Linker command line:
 
 -W-3 \
   --edf=C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\dat\20250204174324_en.msgs \
-  -cn -h+dist/default/debug\PIC18F27Q84_BASIC.X.debug.sym \
-  --cmf=dist/default/debug\PIC18F27Q84_BASIC.X.debug.cmf -z -Q18F27Q84 \
-  -oC:\Users\ENTERN~1\AppData\Local\Temp\xcBs137c.1\driver_tmp_3.o \
+  -cn -h+dist/default/production\PIC18F27Q84_BASIC.X.production.sym \
+  --cmf=dist/default/production\PIC18F27Q84_BASIC.X.production.cmf -z \
+  -Q18F27Q84 -oC:\Users\ENTERN~1\AppData\Local\Temp\xcAsh0s.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
-  -Mdist/default/debug/PIC18F27Q84_BASIC.X.debug.map \
-  --md=C:\Users\ENTERN~1\AppData\Local\Temp\xcBs137c.1\driver_tmp_0.dat -E1 \
+  -Mdist/default/production/PIC18F27Q84_BASIC.X.production.map \
+  --md=C:\Users\ENTERN~1\AppData\Local\Temp\xcAsh0s.\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh \
   -ASMALLCONST=04000h-040FFhx192,014000h-0140FFhx192 \
   -AMEDIUMCONST=04000h-0FFFFh,014000h-01FFFFh -ACOMRAM=0501h-055Fh \
@@ -41,8 +41,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\ENTERN~1\AppData\Local\Temp\xcBs137c.1\driver_tmp_9.o \
-  dist/default/debug\PIC18F27Q84_BASIC.X.debug.o 
+  C:\Users\ENTERN~1\AppData\Local\Temp\xcAsh0s.\driver_tmp_9.o \
+  dist/default/production\PIC18F27Q84_BASIC.X.production.o 
 
 Object code version is 3.11
 
@@ -51,11 +51,11 @@ Machine type is 18F27Q84
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ENTERN~1\AppData\Local\Temp\xcBs137c.1\driver_tmp_9.o
+C:\Users\ENTERN~1\AppData\Local\Temp\xcAsh0s.\driver_tmp_9.o
                 config                           300000   300000       1F        0       4
                 init                              1FFFC    1FFFC        4     FFFE       0
-                reset_vec                             0        0        6        0       0
-dist/default/debug\PIC18F27Q84_BASIC.X.debug.o
+                reset_vec                             0        0        4        0       0
+dist/default/production\PIC18F27Q84_BASIC.X.production.o
                 config                           300000   300000       1F        0       4
                 smallconst                         4000     4000       12     2000       0
                 text26                             457C     457C        E     2009       0
@@ -96,7 +96,7 @@ dist/default/debug\PIC18F27Q84_BASIC.X.debug.o
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
                 init                              1FFFC    1FFFC        4         0
-                reset_vec                             0        0        6         0
+                reset_vec                             0        0        4         0
                 text26                             457C     457C        E         0
                 text25                             456E     456E        E         0
                 text24                             4560     4560        E         0
@@ -268,7 +268,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
-                reset_vec                      000000  000006  000006         0       0  CODE    
+                reset_vec                      000000  000004  000004         0       0  CODE    
                 bssCOMRAM                      000501  00005C  00055D       501       1  COMRAM  
                 bssBANK5                       000560  000018  000578       560       1  BANK5   
                 smallconst                     004000  000012  004012      2000       0  SMALLCON
@@ -333,11 +333,11 @@ UNUSED ADDRESS RANGES
                          000578-0036FF             3188
         BIGSFR           000000-0004FF              500
                          003700-003FFF              900
-        CODE             000006-003FFF             3FFA
+        CODE             000004-003FFF             3FFC
                          004594-01FFFB            1BA68
         COMRAM           00055D-00055F                3
         CONFIG           30001F-300023                5
-        CONST            000006-003FFF             3FFA
+        CONST            000004-003FFF             3FFC
                          004594-01FFFB            1BA68
         EEDATA           380000-3803FF              400
         IDLOC            200000-20003F               40
@@ -665,7 +665,7 @@ __Hramtop                                                     ramtop       00400
 __Hrbit                                                       rbit         000000
 __Hrbss                                                       rbss         000000
 __Hrdata                                                      rdata        000000
-__Hreset_vec                                                  reset_vec    000006
+__Hreset_vec                                                  reset_vec    000004
 __Hrparam                                                     rparam       000000
 __Hsfr                                                        sfr          000000
 __Hsmallconst                                                 smallconst   004012

@@ -1,6 +1,6 @@
 
 18F27Q84 Memory Summary:
-    Program space        used   59Eh (  1438) of 20000h bytes   (  1.1%)
+    Program space        used   59Ch (  1436) of 20000h bytes   (  1.1%)
     Data space           used    74h (   116) of  3200h bytes   (  0.9%)
     Configuration bits   used     Fh (    15) of    12h words   ( 83.3%)
     EEPROM space         used     0h (     0) of   400h bytes   (  0.0%)

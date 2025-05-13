@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/debug\PIC18F27Q84_BASIC.X.debug.hex">
+  <executable name="dist/default/production\PIC18F27Q84_BASIC.X.production.hex">
     <memory name="program">
       <units>bytes</units>
       <length>131072</length>
-      <used>1438</used>
-      <free>129634</free>
+      <used>1436</used>
+      <free>129636</free>
     </memory>
     <memory name="data">
       <units>bytes</units>

@@ -572,7 +572,7 @@ _PWM2CPRE 474 0 ABS 0
 _OSCILLATOR_Initialize 44C8 0 CODE 0
 __smallconst 4000 0 SMALLCONST 0
 _C1FIFOCON1H 15D 0 ABS 0
-__Hreset_vec 6 0 CODE 0
+__Hreset_vec 4 0 CODE 0
 __Lreset_vec 0 0 CODE 0
 _tx_success 51C 0 COMRAM 1
 _PWM1_16BIT_Slice1Output1_InterruptHandler 517 0 COMRAM 1
@@ -604,15 +604,15 @@ __activetblptr 3 0 ABS 0
 _C1FLTCON0L 180 0 ABS 0
 ADC_SetADIInterruptHandler@InterruptHandler 553 0 COMRAM 1
 %segments
-reset_vec 0 5 CODE 0 0
+reset_vec 0 3 CODE 0 0
 init 1FFFC 1FFFF CODE 1FFFC 0
 smallconst 4000 4011 SMALLCONST 4000 0
 bssCOMRAM 501 55C COMRAM 501 1
 bssBANK5 560 577 BANK5 560 1
 text2 4012 4593 CODE 4012 0
 %locals
-dist/default/debug\PIC18F27Q84_BASIC.X.debug.o
-C:\Users\ENTERN~1\AppData\Local\Temp\xcBs137c.1\driver_tmp_1.s
+dist/default/production\PIC18F27Q84_BASIC.X.production.o
+C:\Users\ENTERN~1\AppData\Local\Temp\xcAsh0s.\driver_tmp_1.s
 21817 43C0 0 CODE 0
 21819 43C0 0 CODE 0
 21822 43C0 0 CODE 0

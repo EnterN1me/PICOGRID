@@ -4,11 +4,7 @@
  *
  * Created on May 12, 2025, 2:50 PM
  */
-
-#include "mcc_generated_files/mcc.h"
-#include <xc.h>
 #include "test.h"
-#include "can_bus.h"
 
 void led_test()
 {
@@ -61,7 +57,6 @@ void can_send_test()
   
     while(1)
     {
-        can_send(0x444);
+        can_send((uint32_t)0x444);
     }
-    
 }
