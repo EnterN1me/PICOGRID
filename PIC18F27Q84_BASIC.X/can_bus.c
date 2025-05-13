@@ -1,4 +1,3 @@
-/*
 #include "can_bus.h"
 
 struct Can_Errors get_can_errors(){
@@ -36,4 +35,20 @@ void can_send()
     }
     return;
 }
- * */
+
+int can_receive()
+{
+    nrMsg = CAN1_ReceivedMessageCountGet();
+    if (nrMsg > 0)
+    {
+        if(true == CAN1_Receive(&msg_rx))
+        {
+           for(uint8_t i=0; i<msg_rx.field.dlc; i++)
+           {
+             rx_buff[i] = msg_rx.data[i];
+           }
+           return msg_rx.field.dlc;
+        }
+    }
+    return -1;
+}

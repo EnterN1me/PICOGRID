@@ -44,8 +44,8 @@
 #include "mcc_generated_files/mcc.h"
 #include <string.h>
 
-#include "test.h"
-//#include "can_bus.h"
+//#include "../Shared/test.h"
+#include "can_bus.h"
 
 /*
  RC2 is led 0
@@ -58,26 +58,12 @@ uint8_t tx_data[8];    // TX data bytes buffer
 //uint8_t tx_success; // transmission flag
 */
 
-//can tx
-CAN_MSG_OBJ msg_tx;
-uint8_t tx_data[8];
-uint8_t tx_success;
-CAN_TX_MSG_REQUEST_STATUS tx_status ;
-
-//can rx
-CAN_MSG_OBJ msg_rx;    // RX message object
-uint8_t rx_buff[DLC_8];  // RX data bytes buffer
-uint8_t nrMsg; // number of messages available
-
 //mppt
 float V_bat, V_pv, I_pv, P_pv, V_prev = 50.0, P_prev = 300.0;
 float duty_cycle = 50.0;
 float max_duty, min_duty;
 const float DUTY_CYCLE_STEP = 0.1;
 
-
-void can_send();
-void can_receive();
 void can_light_command();
 void mppt_loop();
 
@@ -111,8 +97,8 @@ void main(void)
         __delay_ms(50);
         //__delay_ms(4000);
         
-        //can_send();
-        can_light_command();
+        can_send();
+        //can_light_command();
     }
 }
 
@@ -162,25 +148,7 @@ void mppt_loop()
 
 
   
-void can_receive()
-{
-    nrMsg = CAN1_ReceivedMessageCountGet();
-    if(nrMsg > 0) 
-    {
-        if(true == CAN1_Receive(&msg_rx))
-       {
-           for(uint8_t i=0; i<msg_rx.field.dlc; i++)
-           {
-             rx_buff[i] = msg_rx.data[i];
-           }
-           if(msg_rx.field.dlc>0)
-           {
-            //do something with rx_buff
-          }
-      }
-      nrMsg--;
-    }  
- }
+
 
 
 void can_light_command()
@@ -204,32 +172,3 @@ void can_light_command()
       nrMsg--;
    }  
  }
-
-
-void can_send()
-{
-    memset( &msg_tx, 0 , sizeof(msg_tx) );// initialize all message bytes with 0
-    
-    msg_tx.msgId    = 0x444;       // message ID
-    msg_tx.field.formatType = CAN_2_0_FORMAT;
-    msg_tx.field.brs = CAN_NON_BRS_MODE;    
-    msg_tx.field.frameType = CAN_FRAME_DATA;
-    msg_tx.field.idType = CAN_FRAME_STD;
-    msg_tx.field.dlc = DLC_8;         // message length
-    msg_tx.data = tx_data;          // set pointer to tx data buffer
- 
-    tx_data[0] = 0x40; // led command
-    tx_data[1] = 0x11; // dummy data
-    tx_data[2] = 0x22; // dummy data
-    tx_data[3] = 0x33; // dummy data
-    tx_data[4] = 0x40; // dummy data
-    tx_data[5] = 0x50; // dummy data
-    tx_data[6] = 0x60; // dummy data
-    tx_data[7] = 0x70; // dummy data
-  
-    if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))
-    {
-        tx_status = CAN1_Transmit(TXQ, &msg_tx); // transmit the CAN message
-    }
-    return;
-}

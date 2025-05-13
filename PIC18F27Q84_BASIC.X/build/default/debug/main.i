@@ -39053,11 +39053,16 @@ size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
 void *memccpy (void *restrict, const void *restrict, int, size_t);
 # 46 "main.c" 2
 
-# 1 "./test.h" 1
-# 37 "./test.h"
-void led_test();
-# 48 "main.c" 2
-# 62 "main.c"
+
+# 1 "./can_bus.h" 1
+# 38 "./can_bus.h"
+struct Can_Errors {
+uint8_t errors_tx;
+uint8_t errors_rx;
+uint8_t errors_busoff;
+};
+
+
 CAN_MSG_OBJ msg_tx;
 uint8_t tx_data[8];
 uint8_t tx_success;
@@ -39068,15 +39073,16 @@ CAN_MSG_OBJ msg_rx;
 uint8_t rx_buff[DLC_8];
 uint8_t nrMsg;
 
-
+struct Can_Errors get_can_errors();
+void can_send();
+int can_receive();
+# 49 "main.c" 2
+# 62 "main.c"
 float V_bat, V_pv, I_pv, P_pv, V_prev = 50.0, P_prev = 300.0;
 float duty_cycle = 50.0;
 float max_duty, min_duty;
 const float DUTY_CYCLE_STEP = 0.1;
 
-
-void can_send();
-void can_receive();
 void can_light_command();
 void mppt_loop();
 
@@ -39087,7 +39093,7 @@ void main(void)
 {
 
     SYSTEM_Initialize();
-# 101 "main.c"
+# 87 "main.c"
     memset( &msg_rx, 0 , sizeof(msg_rx) );
 
     nrMsg = 0;
@@ -39101,32 +39107,11 @@ void main(void)
         _delay((unsigned long)((50)*(20000000/4000.0)));
 
 
+        can_send();
 
-        can_light_command();
     }
 }
-# 165 "main.c"
-void can_receive()
-{
-    nrMsg = CAN1_ReceivedMessageCountGet();
-    if(nrMsg > 0)
-    {
-        if(1 == CAN1_Receive(&msg_rx))
-       {
-           for(uint8_t i=0; i<msg_rx.field.dlc; i++)
-           {
-             rx_buff[i] = msg_rx.data[i];
-           }
-           if(msg_rx.field.dlc>0)
-           {
-
-          }
-      }
-      nrMsg--;
-    }
- }
-
-
+# 154 "main.c"
 void can_light_command()
 {
     nrMsg = CAN1_ReceivedMessageCountGet();
@@ -39148,32 +39133,3 @@ void can_light_command()
       nrMsg--;
    }
  }
-
-
-void can_send()
-{
-    memset( &msg_tx, 0 , sizeof(msg_tx) );
-
-    msg_tx.msgId = 0x444;
-    msg_tx.field.formatType = CAN_2_0_FORMAT;
-    msg_tx.field.brs = CAN_NON_BRS_MODE;
-    msg_tx.field.frameType = CAN_FRAME_DATA;
-    msg_tx.field.idType = CAN_FRAME_STD;
-    msg_tx.field.dlc = DLC_8;
-    msg_tx.data = tx_data;
-
-    tx_data[0] = 0x40;
-    tx_data[1] = 0x11;
-    tx_data[2] = 0x22;
-    tx_data[3] = 0x33;
-    tx_data[4] = 0x40;
-    tx_data[5] = 0x50;
-    tx_data[6] = 0x60;
-    tx_data[7] = 0x70;
-
-    if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))
-    {
-        tx_status = CAN1_Transmit(TXQ, &msg_tx);
-    }
-    return;
-}
