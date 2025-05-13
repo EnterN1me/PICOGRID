@@ -10,6 +10,9 @@ struct Can_Errors get_can_errors(){
 
 void can_send()
 {
+    /*
+     This function send tx_data data in a can bus message
+     */
     memset( &msg_tx, 0 , sizeof(msg_tx) );// initialize all message bytes with 0
     
     msg_tx.msgId    = 0x444;       // message ID
@@ -38,6 +41,9 @@ void can_send()
 
 int can_receive()
 {
+    /*
+     This function receive can message and pass it to rx_buff buffer
+     */
     nrMsg = CAN1_ReceivedMessageCountGet();
     if (nrMsg > 0)
     {
