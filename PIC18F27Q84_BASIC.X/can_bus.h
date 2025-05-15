@@ -11,7 +11,7 @@
 #define	CAN_H
 
 #include <xc.h> // include processor files - each processor file is guarded. 
-#include "can1.h" //can module auto generated function
+#include "mcc_generated_files/can1.h" //can module auto generated function
 #include <string.h>
 
 struct Can_Errors { 

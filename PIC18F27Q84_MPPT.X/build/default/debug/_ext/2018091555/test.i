@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/mcc.c"
+# 1 "../PIC18F27Q84_BASIC.X/test.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 285 "<built-in>" 3
@@ -6,10 +6,15 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/mcc.c" 2
-# 47 "mcc_generated_files/mcc.c"
-# 1 "mcc_generated_files/mcc.h" 1
-# 49 "mcc_generated_files/mcc.h"
+# 1 "../PIC18F27Q84_BASIC.X/test.c" 2
+
+
+
+
+
+
+# 1 "../PIC18F27Q84_BASIC.X/test.h" 1
+# 34 "../PIC18F27Q84_BASIC.X/test.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -38423,18 +38428,20 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 2 3
-# 50 "mcc_generated_files/mcc.h" 2
-# 1 "mcc_generated_files/device_config.h" 1
-# 51 "mcc_generated_files/mcc.h" 2
-# 1 "mcc_generated_files/pin_manager.h" 1
-# 274 "mcc_generated_files/pin_manager.h"
+# 35 "../PIC18F27Q84_BASIC.X/test.h" 2
+# 1 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h" 1
+# 50 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h"
+# 1 "../PIC18F27Q84_BASIC.X/mcc_generated_files/device_config.h" 1
+# 51 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h" 2
+# 1 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pin_manager.h" 1
+# 246 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 286 "mcc_generated_files/pin_manager.h"
+# 258 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 52 "mcc_generated_files/mcc.h" 2
+# 52 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include\\c99/stdbool.h" 1 3
-# 54 "mcc_generated_files/mcc.h" 2
+# 54 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include\\c99/conio.h" 1 3
 
 
@@ -38595,9 +38602,9 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 8 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include\\c99/conio.h" 2 3
-# 55 "mcc_generated_files/mcc.h" 2
-# 1 "mcc_generated_files/adc.h" 1
-# 65 "mcc_generated_files/adc.h"
+# 55 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h" 2
+# 1 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h" 1
+# 65 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 typedef uint16_t adc_result_t;
 
 
@@ -38608,8 +38615,6 @@ typedef uint16_t adc_result_t;
 typedef enum
 {
     channel_ANA0 = 0x0,
-    channel_ANA1 = 0x1,
-    channel_ANA4 = 0x4,
     channel_VSS = 0x3B,
     channel_Temp = 0x3C,
     channel_DAC1 = 0x3D,
@@ -38628,75 +38633,75 @@ typedef enum
     CONTEXT_2,
     CONTEXT_3,
 } ADC_context_t;
-# 117 "mcc_generated_files/adc.h"
+# 115 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 148 "mcc_generated_files/adc.h"
+# 146 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_EnableChannelSequencer(void);
-# 170 "mcc_generated_files/adc.h"
+# 168 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_DisableChannelSequencer(void);
-# 202 "mcc_generated_files/adc.h"
+# 200 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_StartChannelSequencer(void);
-# 225 "mcc_generated_files/adc.h"
+# 223 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_SelectContext(ADC_context_t context);
-# 247 "mcc_generated_files/adc.h"
+# 245 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_EnableChannelScan(ADC_context_t context);
-# 271 "mcc_generated_files/adc.h"
+# 269 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_DisableChannelScan(ADC_context_t context);
-# 298 "mcc_generated_files/adc.h"
+# 296 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_StartConversion(ADC_channel_t channel);
-# 324 "mcc_generated_files/adc.h"
+# 322 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 350 "mcc_generated_files/adc.h"
+# 348 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 376 "mcc_generated_files/adc.h"
+# 374 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
-# 401 "mcc_generated_files/adc.h"
+# 399 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_StopConversion(void);
-# 425 "mcc_generated_files/adc.h"
+# 423 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_SetStopOnInterrupt(void);
-# 453 "mcc_generated_files/adc.h"
+# 451 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_DischargeSampleCapacitor(void);
-# 477 "mcc_generated_files/adc.h"
+# 475 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_LoadAcquisitionRegister(uint16_t acquisitionValue);
-# 501 "mcc_generated_files/adc.h"
+# 499 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_SetPrechargeTime(uint16_t prechargeTime);
-# 525 "mcc_generated_files/adc.h"
+# 523 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_SetRepeatCount(uint8_t repeatCount);
-# 549 "mcc_generated_files/adc.h"
+# 547 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 uint8_t ADC_GetCurrentCountofConversions(void);
-# 572 "mcc_generated_files/adc.h"
+# 570 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_ClearAccumulator(void);
-# 596 "mcc_generated_files/adc.h"
+# 594 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 uint24_t ADC_GetAccumulatorValue(void);
-# 623 "mcc_generated_files/adc.h"
+# 621 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 _Bool ADC_HasAccumulatorOverflowed(void);
-# 647 "mcc_generated_files/adc.h"
+# 645 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 uint16_t ADC_GetFilterValue(void);
-# 671 "mcc_generated_files/adc.h"
+# 669 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 uint16_t ADC_GetPreviousResult(void);
-# 695 "mcc_generated_files/adc.h"
+# 693 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_DefineSetPoint(uint16_t setPoint);
-# 719 "mcc_generated_files/adc.h"
+# 717 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_SetUpperThreshold(uint16_t upperThreshold);
-# 743 "mcc_generated_files/adc.h"
+# 741 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_SetLowerThreshold(uint16_t lowerThreshold);
-# 768 "mcc_generated_files/adc.h"
+# 766 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 uint16_t ADC_GetErrorCalculation(void);
-# 792 "mcc_generated_files/adc.h"
+# 790 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_EnableDoubleSampling(void);
-# 816 "mcc_generated_files/adc.h"
+# 814 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_EnableContinuousConversion(void);
-# 840 "mcc_generated_files/adc.h"
+# 838 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_DisableContinuousConversion(void);
-# 867 "mcc_generated_files/adc.h"
+# 865 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 _Bool ADC_HasErrorCrossedUpperThreshold(void);
-# 894 "mcc_generated_files/adc.h"
+# 892 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 _Bool ADC_HasErrorCrossedLowerThreshold(void);
-# 919 "mcc_generated_files/adc.h"
+# 917 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 uint8_t ADC_GetConversionStageStatus(void);
-# 940 "mcc_generated_files/adc.h"
+# 938 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_EnableChargePump(void);
-# 961 "mcc_generated_files/adc.h"
+# 959 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 __attribute__((inline)) void ADC_DisableChargePump(void);
 
 
@@ -38706,7 +38711,7 @@ __attribute__((inline)) void ADC_DisableChargePump(void);
 
 
 void ADC_ADI_ISR(void);
-# 997 "mcc_generated_files/adc.h"
+# 995 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -38716,7 +38721,7 @@ void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ACTI_ISR(void);
-# 1033 "mcc_generated_files/adc.h"
+# 1031 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_SetActiveClockTuningInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -38726,7 +38731,7 @@ void ADC_SetActiveClockTuningInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ADCH1_ISR(void);
-# 1069 "mcc_generated_files/adc.h"
+# 1067 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_SetContext1ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -38736,7 +38741,7 @@ void ADC_SetContext1ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ADCH2_ISR(void);
-# 1105 "mcc_generated_files/adc.h"
+# 1103 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_SetContext2ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -38746,7 +38751,7 @@ void ADC_SetContext2ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ADCH3_ISR(void);
-# 1141 "mcc_generated_files/adc.h"
+# 1139 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
@@ -38756,54 +38761,54 @@ void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void));
 
 
 void ADC_ADCH4_ISR(void);
-# 1177 "mcc_generated_files/adc.h"
+# 1175 "../PIC18F27Q84_BASIC.X/mcc_generated_files/adc.h"
 void ADC_SetContext4ThresholdInterruptHandler(void (* InterruptHandler)(void));
-# 56 "mcc_generated_files/mcc.h" 2
-# 1 "mcc_generated_files/pwm1_16bit.h" 1
-# 63 "mcc_generated_files/pwm1_16bit.h"
-void PWM1_16BIT_Initialize(void);
+# 56 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h" 2
+# 1 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm2_16bit.h" 1
+# 63 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_Initialize(void);
 
 
 
 
 
 
-void PWM1_16BIT_Enable();
-# 79 "mcc_generated_files/pwm1_16bit.h"
-void PWM1_16BIT_Disable();
-# 96 "mcc_generated_files/pwm1_16bit.h"
-void PWM1_16BIT_WritePeriodRegister(uint16_t periodCount);
-# 114 "mcc_generated_files/pwm1_16bit.h"
-void PWM1_16BIT_SetSlice1Output1DutyCycleRegister(uint16_t value);
-# 131 "mcc_generated_files/pwm1_16bit.h"
-void PWM1_16BIT_SetSlice1Output2DutyCycleRegister(uint16_t value);
-# 148 "mcc_generated_files/pwm1_16bit.h"
-void PWM1_16BIT_LoadBufferRegisters(void);
+void PWM2_16BIT_Enable();
+# 79 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_Disable();
+# 96 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_WritePeriodRegister(uint16_t periodCount);
+# 114 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_SetSlice1Output1DutyCycleRegister(uint16_t value);
+# 131 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_SetSlice1Output2DutyCycleRegister(uint16_t value);
+# 148 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_LoadBufferRegisters(void);
 
 
 
 
 
 
-void PWM1_16BIT_PWMI_ISR(void);
+void PWM2_16BIT_PWMI_ISR(void);
 
 
 
 
 
 
-void PWM1_16BIT_PWMPI_ISR(void);
-# 182 "mcc_generated_files/pwm1_16bit.h"
-void PWM1_16BIT_Slice1Output1_SetInterruptHandler(void (* InterruptHandler)(void));
-# 202 "mcc_generated_files/pwm1_16bit.h"
-void PWM1_16BIT_Slice1Output2_SetInterruptHandler(void (* InterruptHandler)(void));
-# 222 "mcc_generated_files/pwm1_16bit.h"
-void PWM1_16BIT_Period_SetInterruptHandler(void (* InterruptHandler)(void));
-# 57 "mcc_generated_files/mcc.h" 2
-# 1 "mcc_generated_files/can1.h" 1
-# 56 "mcc_generated_files/can1.h"
-# 1 "mcc_generated_files/can_types.h" 1
-# 65 "mcc_generated_files/can_types.h"
+void PWM2_16BIT_PWMPI_ISR(void);
+# 182 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_Slice1Output1_SetInterruptHandler(void (* InterruptHandler)(void));
+# 202 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_Slice1Output2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 222 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm2_16bit.h"
+void PWM2_16BIT_Period_SetInterruptHandler(void (* InterruptHandler)(void));
+# 57 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h" 2
+# 1 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h" 1
+# 56 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
+# 1 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h" 1
+# 65 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h"
 typedef union
 {
     uint8_t msgfields;
@@ -38823,31 +38828,31 @@ typedef struct
     CAN_MSG_FIELD field;
     uint8_t *data;
 } CAN_MSG_OBJ;
-# 94 "mcc_generated_files/can_types.h"
+# 94 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h"
 typedef enum
 {
     CAN_NON_BRS_MODE = 0,
     CAN_BRS_MODE = 1
 } CAN_MSG_OBJ_BRS_MODE;
-# 109 "mcc_generated_files/can_types.h"
+# 109 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h"
 typedef enum
 {
     CAN_FRAME_STD = 0,
     CAN_FRAME_EXT = 1,
 } CAN_MSG_OBJ_ID_TYPE;
-# 124 "mcc_generated_files/can_types.h"
+# 124 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h"
 typedef enum
 {
     CAN_FRAME_DATA = 0,
     CAN_FRAME_RTR = 1,
 } CAN_MSG_OBJ_FRAME_TYPE;
-# 139 "mcc_generated_files/can_types.h"
+# 139 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h"
 typedef enum
 {
     CAN_2_0_FORMAT = 0,
     CAN_FD_FORMAT = 1
 } CAN_MSG_OBJ_TYPE;
-# 154 "mcc_generated_files/can_types.h"
+# 154 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h"
 typedef enum
 {
     CAN_TX_MSG_REQUEST_SUCCESS = 0,
@@ -38855,7 +38860,7 @@ typedef enum
     CAN_TX_MSG_REQUEST_BRS_ERROR = 2,
     CAN_TX_MSG_REQUEST_FIFO_FULL = 3,
 } CAN_TX_MSG_REQUEST_STATUS;
-# 171 "mcc_generated_files/can_types.h"
+# 171 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h"
 typedef enum
 {
     CAN_NORMAL_FD_MODE = 0,
@@ -38867,20 +38872,20 @@ typedef enum
     CAN_NORMAL_2_0_MODE = 6,
     CAN_RESTRICTED_OPERATION_MODE =7,
 } CAN_OP_MODES;
-# 192 "mcc_generated_files/can_types.h"
+# 192 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h"
 typedef enum
 {
     CAN_OP_MODE_REQUEST_SUCCESS,
     CAN_OP_MODE_REQUEST_FAIL,
     CAN_OP_MODE_SYS_ERROR_OCCURED
 } CAN_OP_MODE_STATUS;
-# 208 "mcc_generated_files/can_types.h"
+# 208 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h"
 typedef enum
 {
     CAN_TX_FIFO_FULL,
     CAN_TX_FIFO_AVAILABLE,
 } CAN_TX_FIFO_STATUS;
-# 223 "mcc_generated_files/can_types.h"
+# 223 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h"
 typedef enum
 {
 
@@ -38904,7 +38909,7 @@ typedef enum
     DLC_48,
     DLC_64,
 } CAN_DLC;
-# 57 "mcc_generated_files/can1.h" 2
+# 57 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h" 2
 
 
 
@@ -38913,92 +38918,229 @@ typedef enum
 {
     TXQ = 0
 } CAN1_TX_FIFO_CHANNELS;
-# 102 "mcc_generated_files/can1.h"
+# 102 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 void CAN1_Initialize(void);
-# 143 "mcc_generated_files/can1.h"
+# 143 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
-# 181 "mcc_generated_files/can1.h"
+# 181 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 CAN_OP_MODES CAN1_OperationModeGet(void);
-# 231 "mcc_generated_files/can1.h"
+# 231 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
-# 290 "mcc_generated_files/can1.h"
+# 290 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
-# 346 "mcc_generated_files/can1.h"
+# 346 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 _Bool CAN1_IsBusOff(void);
-# 404 "mcc_generated_files/can1.h"
+# 404 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 _Bool CAN1_IsTxErrorPassive(void);
-# 463 "mcc_generated_files/can1.h"
+# 463 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 _Bool CAN1_IsTxErrorWarning(void);
-# 522 "mcc_generated_files/can1.h"
+# 522 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 _Bool CAN1_IsTxErrorActive(void);
-# 570 "mcc_generated_files/can1.h"
+# 570 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 _Bool CAN1_IsRxErrorPassive(void);
-# 618 "mcc_generated_files/can1.h"
+# 618 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 _Bool CAN1_IsRxErrorWarning(void);
-# 666 "mcc_generated_files/can1.h"
+# 666 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 _Bool CAN1_IsRxErrorActive(void);
-# 717 "mcc_generated_files/can1.h"
+# 717 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 void CAN1_Sleep(void);
-# 771 "mcc_generated_files/can1.h"
+# 771 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
-# 813 "mcc_generated_files/can1.h"
+# 813 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 uint8_t CAN1_ReceivedMessageCountGet(void);
-# 848 "mcc_generated_files/can1.h"
+# 848 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 void CAN1_SetFIFO1nullHandler(void (*handler)(void));
-# 892 "mcc_generated_files/can1.h"
+# 892 "../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h"
 void CAN1_SetTXQnullHandler(void (*handler)(void));
-# 58 "mcc_generated_files/mcc.h" 2
-# 72 "mcc_generated_files/mcc.h"
+# 58 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h" 2
+# 1 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm1_16bit.h" 1
+# 63 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_Initialize(void);
+
+
+
+
+
+
+void PWM1_16BIT_Enable();
+# 79 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_Disable();
+# 96 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_WritePeriodRegister(uint16_t periodCount);
+# 114 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_SetSlice1Output1DutyCycleRegister(uint16_t value);
+# 131 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_SetSlice1Output2DutyCycleRegister(uint16_t value);
+# 148 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_LoadBufferRegisters(void);
+
+
+
+
+
+
+void PWM1_16BIT_PWMI_ISR(void);
+
+
+
+
+
+
+void PWM1_16BIT_PWMPI_ISR(void);
+# 182 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_Slice1Output1_SetInterruptHandler(void (* InterruptHandler)(void));
+# 202 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_Slice1Output2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 222 "../PIC18F27Q84_BASIC.X/mcc_generated_files/pwm1_16bit.h"
+void PWM1_16BIT_Period_SetInterruptHandler(void (* InterruptHandler)(void));
+# 59 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h" 2
+# 73 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 85 "mcc_generated_files/mcc.h"
+# 86 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 98 "mcc_generated_files/mcc.h"
+# 99 "../PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
-# 48 "mcc_generated_files/mcc.c" 2
+# 36 "../PIC18F27Q84_BASIC.X/test.h" 2
+# 1 "../PIC18F27Q84_BASIC.X/can_bus.h" 1
+# 15 "../PIC18F27Q84_BASIC.X/can_bus.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include\\c99/string.h" 1 3
+# 25 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include\\c99/string.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include\\c99/bits/alltypes.h" 1 3
+# 421 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include\\c99/bits/alltypes.h" 3
+typedef struct __locale_struct * locale_t;
+# 26 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include\\c99/string.h" 2 3
+
+void *memcpy (void *restrict, const void *restrict, size_t);
+void *memmove (void *, const void *, size_t);
+void *memset (void *, int, size_t);
+int memcmp (const void *, const void *, size_t);
+void *memchr (const void *, int, size_t);
+
+char *strcpy (char *restrict, const char *restrict);
+char *strncpy (char *restrict, const char *restrict, size_t);
+
+char *strcat (char *restrict, const char *restrict);
+char *strncat (char *restrict, const char *restrict, size_t);
+
+int strcmp (const char *, const char *);
+int strncmp (const char *, const char *, size_t);
+
+int strcoll (const char *, const char *);
+size_t strxfrm (char *restrict, const char *restrict, size_t);
+
+char *strchr (const char *, int);
+char *strrchr (const char *, int);
+
+size_t strcspn (const char *, const char *);
+size_t strspn (const char *, const char *);
+char *strpbrk (const char *, const char *);
+char *strstr (const char *, const char *);
+char *strtok (char *restrict, const char *restrict);
+
+size_t strlen (const char *);
+
+char *strerror (int);
 
 
-void SYSTEM_Initialize(void)
+
+
+char *strtok_r (char *restrict, const char *restrict, char **restrict);
+int strerror_r (int, char *, size_t);
+char *stpcpy(char *restrict, const char *restrict);
+char *stpncpy(char *restrict, const char *restrict, size_t);
+size_t strnlen (const char *, size_t);
+char *strdup (const char *);
+char *strndup (const char *, size_t);
+char *strsignal(int);
+char *strerror_l (int, locale_t);
+int strcoll_l (const char *, const char *, locale_t);
+size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+
+
+
+
+void *memccpy (void *restrict, const void *restrict, int, size_t);
+# 16 "../PIC18F27Q84_BASIC.X/can_bus.h" 2
+
+struct Can_Errors {
+uint8_t errors_tx;
+uint8_t errors_rx;
+uint8_t errors_busoff;
+};
+
+
+CAN_MSG_OBJ msg_tx;
+uint8_t tx_data[8];
+uint8_t tx_success;
+CAN_TX_MSG_REQUEST_STATUS tx_status ;
+
+
+CAN_MSG_OBJ msg_rx;
+uint8_t rx_buff[DLC_8];
+uint8_t nrMsg;
+
+struct Can_Errors get_can_errors();
+void can_send(uint32_t id);
+int can_receive();
+# 37 "../PIC18F27Q84_BASIC.X/test.h" 2
+
+
+void led_test(void);
+void can_receive_test();
+void can_send_test();
+# 8 "../PIC18F27Q84_BASIC.X/test.c" 2
+
+void led_test(void)
 {
-    PMD_Initialize();
-    PIN_MANAGER_Initialize();
-    ADC_Initialize();
-    OSCILLATOR_Initialize();
-    CAN1_Initialize();
-    PWM1_16BIT_Initialize();
+
+
+
+    while(1)
+        {
+        LATCbits.LATC4 = (LATCbits.LATC3 && LATCbits.LATC2) ? !LATCbits.LATC4 : LATCbits.LATC4 ;
+        LATCbits.LATC3 = (LATCbits.LATC2) ? !LATCbits.LATC3 : LATCbits.LATC3 ;
+        do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0);
+        _delay((unsigned long)((1000)*(20000000/4000.0)));
+    }
 }
 
-void OSCILLATOR_Initialize(void)
+void can_receive_test()
 {
 
-    OSCCON1 = 0x70;
 
-    OSCCON3 = 0x00;
 
-    OSCEN = 0x00;
 
-    OSCFRQ = 0x02;
 
-    OSCTUNE = 0x00;
-}
 
-void PMD_Initialize(void)
+    while(1)
+    {
+        if(can_receive()>=3){
+            LATCbits.LATC2 = rx_buff[0];
+            LATCbits.LATC3 = rx_buff[1];
+            LATCbits.LATC4 = rx_buff[2];
+
+        }
+    }
+ }
+
+void can_send_test()
 {
 
-    PMD0 = 0x00;
 
-    PMD1 = 0x00;
 
-    PMD2 = 0x00;
 
-    PMD3 = 0x00;
 
-    PMD4 = 0x00;
+    tx_data[0] = 0x40;
+    tx_data[1] = 0x11;
+    tx_data[2] = 0x22;
+    tx_data[3] = 0x33;
+    tx_data[4] = 0x44;
+    tx_data[5] = 0x55;
+    tx_data[6] = 0x66;
+    tx_data[7] = 0x77;
 
-    PMD5 = 0x00;
-
-    PMD6 = 0x00;
-
-    PMD7 = 0x00;
-
-    PMD8 = 0x00;
+    while(1)
+    {
+        can_send((uint32_t)0x444);
+    }
 }

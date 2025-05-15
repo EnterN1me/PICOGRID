@@ -13,6 +13,7 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>.</sourceRootElem>
+                <sourceRootElem>../PIC18F27Q84_BASIC.X</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

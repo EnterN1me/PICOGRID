@@ -13,7 +13,7 @@ void can_send(uint32_t id)
     /*
      This function send tx_data data in a can bus message
      */
-    memset( &msg_tx, 0 , sizeof(msg_tx) );// initialize all message bytes with 0
+    memset( &msg_tx, 0 , sizeof(msg_tx));// initialize all message bytes with 0
     
     msg_tx.msgId    = id;       // message ID
     msg_tx.field.formatType = CAN_2_0_FORMAT;

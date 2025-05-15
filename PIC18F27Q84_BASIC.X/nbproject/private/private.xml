@@ -4,6 +4,14 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_BASIC.X/main.c</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_BASIC.X/can_bus.c</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_BASIC.X/mcc_generated_files/pin_manager.h</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_BASIC.X/test.h</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_BASIC.X/mcc_generated_files/mcc.h</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_BASIC.X/can_bus.h</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_BASIC.X/mcc_generated_files/can1.c</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_BASIC.X/test.c</file>
             <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_BASIC.X/Makefile</file>
         </group>
     </open-files>

@@ -13,7 +13,6 @@
         <itemPath>mcc_generated_files/can_types.h</itemPath>
         <itemPath>mcc_generated_files/can1.h</itemPath>
         <itemPath>mcc_generated_files/pwm1_16bit.h</itemPath>
-        <itemPath>mcc_generated_files/pwm2_16bit.h</itemPath>
         <itemPath>mcc_generated_files/adc.h</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -38,18 +37,20 @@
         <itemPath>mcc_generated_files/pin_manager.c</itemPath>
         <itemPath>mcc_generated_files/can1.c</itemPath>
         <itemPath>mcc_generated_files/adc.c</itemPath>
-        <itemPath>mcc_generated_files/pwm2_16bit.c</itemPath>
         <itemPath>mcc_generated_files/pwm1_16bit.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
-      <itemPath>can_bus.c</itemPath>
-      <itemPath>test.c</itemPath>
-      <itemPath>test.h</itemPath>
-      <itemPath>can_bus.h</itemPath>
+      <itemPath>mppt.c</itemPath>
+      <itemPath>mppt.h</itemPath>
+      <itemPath>../PIC18F27Q84_BASIC.X/can_bus.c</itemPath>
+      <itemPath>../PIC18F27Q84_BASIC.X/can_bus.h</itemPath>
+      <itemPath>../PIC18F27Q84_BASIC.X/test.c</itemPath>
+      <itemPath>../PIC18F27Q84_BASIC.X/test.h</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>.</Elem>
+    <Elem>../PIC18F27Q84_BASIC.X</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -317,8 +318,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-1ffff"/>
         <property key="poweroptions.powerenable" value="true"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/Users/EnterN1me/Documents/INSA/Semestre 8/Projet S8/PIC18F27Q84_BASIC.X/debug/default/onchip_extosc_ptg"/>
         <property key="programmerToGoImageName" value="onchip_extosc_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>

@@ -1,131 +1,24 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F22863 `(v ~T0 @X0 0 tf ]
-[v F22865 `(v ~T0 @X0 0 tf ]
-[v F22867 `(v ~T0 @X0 0 tf ]
-"64379 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64379: extern volatile unsigned char PWM2ERS __attribute__((address(0x46F)));
-[v _PWM2ERS `Vuc ~T0 @X0 0 e@1135 ]
-"64449
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64449: extern volatile unsigned char PWM2CLK __attribute__((address(0x470)));
-[v _PWM2CLK `Vuc ~T0 @X0 0 e@1136 ]
-"64519
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64519: extern volatile unsigned char PWM2LDS __attribute__((address(0x471)));
-[v _PWM2LDS `Vuc ~T0 @X0 0 e@1137 ]
-"64596
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64596: extern volatile unsigned char PWM2PRL __attribute__((address(0x472)));
-[v _PWM2PRL `Vuc ~T0 @X0 0 e@1138 ]
-"64616
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64616: extern volatile unsigned char PWM2PRH __attribute__((address(0x473)));
-[v _PWM2PRH `Vuc ~T0 @X0 0 e@1139 ]
-"64636
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64636: extern volatile unsigned char PWM2CPRE __attribute__((address(0x474)));
-[v _PWM2CPRE `Vuc ~T0 @X0 0 e@1140 ]
-"64656
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64656: extern volatile unsigned char PWM2PIPOS __attribute__((address(0x475)));
-[v _PWM2PIPOS `Vuc ~T0 @X0 0 e@1141 ]
-"64676
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64676: extern volatile unsigned char PWM2GIR __attribute__((address(0x476)));
-[v _PWM2GIR `Vuc ~T0 @X0 0 e@1142 ]
-"64702
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64702: extern volatile unsigned char PWM2GIE __attribute__((address(0x477)));
-[v _PWM2GIE `Vuc ~T0 @X0 0 e@1143 ]
-"64767
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64767: extern volatile unsigned char PWM2S1CFG __attribute__((address(0x479)));
-[v _PWM2S1CFG `Vuc ~T0 @X0 0 e@1145 ]
-"64833
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64833: extern volatile unsigned char PWM2S1P1L __attribute__((address(0x47A)));
-[v _PWM2S1P1L `Vuc ~T0 @X0 0 e@1146 ]
-"64853
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64853: extern volatile unsigned char PWM2S1P1H __attribute__((address(0x47B)));
-[v _PWM2S1P1H `Vuc ~T0 @X0 0 e@1147 ]
-"64880
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64880: extern volatile unsigned char PWM2S1P2L __attribute__((address(0x47C)));
-[v _PWM2S1P2L `Vuc ~T0 @X0 0 e@1148 ]
-"64900
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64900: extern volatile unsigned char PWM2S1P2H __attribute__((address(0x47D)));
-[v _PWM2S1P2H `Vuc ~T0 @X0 0 e@1149 ]
-"1851
-[s S3092 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3092 . SPI2RXIF SPI2TXIF SPI2IF TU16BIF TMR3IF TMR3GIF PWM2PIF PWM2IF ]
-"1850
-[u S3091 `S3092 1 ]
-[n S3091 . . ]
-"1862
-[v _PIR5bits `VS3091 ~T0 @X0 0 e@1203 ]
-"64682
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64682:     struct {
-[s S2959 :1 `uc 1 :1 `uc 1 ]
-[n S2959 . S1P1IF S1P2IF ]
-"64681
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64681: typedef union {
-[u S2958 `S2959 1 ]
-[n S2958 . . ]
-"64687
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64687: extern volatile PWM2GIRbits_t PWM2GIRbits __attribute__((address(0x476)));
-[v _PWM2GIRbits `VS2958 ~T0 @X0 0 e@1142 ]
-"866
-[s S3059 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3059 . SPI2RXIE SPI2TXIE SPI2IE TU16BIE TMR3IE TMR3GIE PWM2PIE PWM2IE ]
-"865
-[u S3058 `S3059 1 ]
-[n S3058 . . ]
-"877
-[v _PIE5bits `VS3058 ~T0 @X0 0 e@1187 ]
-[v F22851 `(v ~T0 @X0 0 tf ]
-"182 mcc_generated_files/pwm2_16bit.h
-[; ;mcc_generated_files/pwm2_16bit.h: 182: void PWM2_16BIT_Slice1Output1_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _PWM2_16BIT_Slice1Output1_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F22851 ]
-"59 mcc_generated_files/pwm2_16bit.c
-[; ;mcc_generated_files/pwm2_16bit.c: 59: static void PWM2_16BIT_Slice1Output1_DefaultInterruptHandler(void);
-[v _PWM2_16BIT_Slice1Output1_DefaultInterruptHandler `(v ~T0 @X0 0 sf ]
-[v F22855 `(v ~T0 @X0 0 tf ]
-"202 mcc_generated_files/pwm2_16bit.h
-[; ;mcc_generated_files/pwm2_16bit.h: 202: void PWM2_16BIT_Slice1Output2_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _PWM2_16BIT_Slice1Output2_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F22855 ]
-"60 mcc_generated_files/pwm2_16bit.c
-[; ;mcc_generated_files/pwm2_16bit.c: 60: static void PWM2_16BIT_Slice1Output2_DefaultInterruptHandler(void);
-[v _PWM2_16BIT_Slice1Output2_DefaultInterruptHandler `(v ~T0 @X0 0 sf ]
-[v F22859 `(v ~T0 @X0 0 tf ]
-"222 mcc_generated_files/pwm2_16bit.h
-[; ;mcc_generated_files/pwm2_16bit.h: 222: void PWM2_16BIT_Period_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _PWM2_16BIT_Period_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F22859 ]
-"61 mcc_generated_files/pwm2_16bit.c
-[; ;mcc_generated_files/pwm2_16bit.c: 61: static void PWM2_16BIT_Period_DefaultInterruptHandler(void);
-[v _PWM2_16BIT_Period_DefaultInterruptHandler `(v ~T0 @X0 0 sf ]
-"64728 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64728: extern volatile unsigned char PWM2CON __attribute__((address(0x478)));
-[v _PWM2CON `Vuc ~T0 @X0 0 e@1144 ]
-"64734
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64734:     struct {
-[s S2963 :1 `uc 1 :1 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
-[n S2963 . ERSNOW ERSPOL LD . EN ]
-"64733
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64733: typedef union {
-[u S2962 `S2963 1 ]
-[n S2962 . . ]
-"64742
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64742: extern volatile PWM2CONbits_t PWM2CONbits __attribute__((address(0x478)));
-[v _PWM2CONbits `VS2962 ~T0 @X0 0 e@1144 ]
-"64708
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64708:     struct {
-[s S2961 :1 `uc 1 :1 `uc 1 ]
-[n S2961 . S1P1IE S1P2IE ]
-"64707
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64707: typedef union {
-[u S2960 `S2961 1 ]
-[n S2960 . . ]
-"64713
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64713: extern volatile PWM2GIEbits_t PWM2GIEbits __attribute__((address(0x477)));
-[v _PWM2GIEbits `VS2960 ~T0 @X0 0 e@1143 ]
-[v F22885 `(v ~T0 @X0 0 tf ]
-[v F22886 `(v ~T0 @X0 0 tf ]
-[v F22888 `(v ~T0 @X0 0 tf ]
-[v F22890 `(v ~T0 @X0 0 tf ]
-[v F22892 `(v ~T0 @X0 0 tf ]
-[v F22895 `(v ~T0 @X0 0 tf ]
-[v F22897 `(v ~T0 @X0 0 tf ]
-[v F22900 `(v ~T0 @X0 0 tf ]
-[v F22902 `(v ~T0 @X0 0 tf ]
+"12 mppt.c
+[; ;mppt.c: 12:      V_pv = ADC_GetSingleConversion(channel_ANA0) * (5.0 / 1023.0);
+[c E23162 0 1 4 59 60 61 62 63 .. ]
+[n E23162 . channel_ANA0 channel_ANA1 channel_ANA4 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"376 ./mcc_generated_files/adc.h
+[; ;./mcc_generated_files/adc.h: 376: adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
+[v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23162 ]
+"64312 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64312: extern volatile unsigned char PWM1S1P1H __attribute__((address(0x46C)));
+[v _PWM1S1P1H `Vuc ~T0 @X0 0 e@1132 ]
+"64292
+[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 64292: extern volatile unsigned char PWM1S1P1L __attribute__((address(0x46B)));
+[v _PWM1S1P1L `Vuc ~T0 @X0 0 e@1131 ]
+"114 ./mcc_generated_files/pwm1_16bit.h
+[; ;./mcc_generated_files/pwm1_16bit.h: 114: void PWM1_16BIT_SetSlice1Output1DutyCycleRegister(uint16_t value);
+[v _PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v ~T0 @X0 0 ef1`us ]
+[v F205 `(v ~T0 @X0 1 tf1`ul ]
+"20 C:\Program Files\Microchip\xc8\v3.00\pic\include/builtins.h
+[v __delay `JF205 ~T0 @X0 0 e ]
+[p i __delay ]
 "304 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 304: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3654,385 +3547,159 @@ Version 4.0 HI-TECH Software Intermediate Code
 "69910
 [; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 69910: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"56 mcc_generated_files/pwm2_16bit.c
-[; ;mcc_generated_files/pwm2_16bit.c: 56: static void (*PWM2_16BIT_Slice1Output1_InterruptHandler)(void);
-[v _PWM2_16BIT_Slice1Output1_InterruptHandler `*F22863 ~T0 @X0 1 s ]
-"57
-[; ;mcc_generated_files/pwm2_16bit.c: 57: static void (*PWM2_16BIT_Slice1Output2_InterruptHandler)(void);
-[v _PWM2_16BIT_Slice1Output2_InterruptHandler `*F22865 ~T0 @X0 1 s ]
-"58
-[; ;mcc_generated_files/pwm2_16bit.c: 58: static void (*PWM2_16BIT_Period_InterruptHandler)(void);
-[v _PWM2_16BIT_Period_InterruptHandler `*F22867 ~T0 @X0 1 s ]
-"63
-[; ;mcc_generated_files/pwm2_16bit.c: 63: void PWM2_16BIT_Initialize(void)
-[v _PWM2_16BIT_Initialize `(v ~T0 @X0 1 ef ]
-"64
-[; ;mcc_generated_files/pwm2_16bit.c: 64: {
+"42 ./mppt.h
+[; ;./mppt.h: 42: float V_bat;
+[v _V_bat `f ~T0 @X0 1 e ]
+"43
+[; ;./mppt.h: 43: float V_pv;
+[v _V_pv `f ~T0 @X0 1 e ]
+"44
+[; ;./mppt.h: 44: float I_pv;
+[v _I_pv `f ~T0 @X0 1 e ]
+"45
+[; ;./mppt.h: 45: float P_pv;
+[v _P_pv `f ~T0 @X0 1 e ]
+"46
+[; ;./mppt.h: 46: float V_prev;
+[v _V_prev `f ~T0 @X0 1 e ]
+"47
+[; ;./mppt.h: 47: float P_prev;
+[v _P_prev `f ~T0 @X0 1 e ]
+"48
+[; ;./mppt.h: 48: float duty_cycle;
+[v _duty_cycle `f ~T0 @X0 1 e ]
+"49
+[; ;./mppt.h: 49: float max_duty, min_duty;
+[v _max_duty `f ~T0 @X0 1 e ]
+[v _min_duty `f ~T0 @X0 1 e ]
+"3 mppt.c
+[; ;mppt.c: 3: void mppt_init()
+[v _mppt_init `(v ~T0 @X0 1 ef ]
+"4
+[; ;mppt.c: 4: {
 {
-[e :U _PWM2_16BIT_Initialize ]
+[e :U _mppt_init ]
 [f ]
-"66
-[; ;mcc_generated_files/pwm2_16bit.c: 66:     PWM2ERS = 0x00;
-[e = _PWM2ERS -> -> 0 `i `uc ]
-"69
-[; ;mcc_generated_files/pwm2_16bit.c: 69:     PWM2CLK = 0x02;
-[e = _PWM2CLK -> -> 2 `i `uc ]
-"72
-[; ;mcc_generated_files/pwm2_16bit.c: 72:     PWM2LDS = 0x00;
-[e = _PWM2LDS -> -> 0 `i `uc ]
-"75
-[; ;mcc_generated_files/pwm2_16bit.c: 75:     PWM2PRL = 0x1F;
-[e = _PWM2PRL -> -> 31 `i `uc ]
-"78
-[; ;mcc_generated_files/pwm2_16bit.c: 78:     PWM2PRH = 0x4E;
-[e = _PWM2PRH -> -> 78 `i `uc ]
-"81
-[; ;mcc_generated_files/pwm2_16bit.c: 81:     PWM2CPRE = 0x00;
-[e = _PWM2CPRE -> -> 0 `i `uc ]
-"84
-[; ;mcc_generated_files/pwm2_16bit.c: 84:     PWM2PIPOS = 0x00;
-[e = _PWM2PIPOS -> -> 0 `i `uc ]
-"87
-[; ;mcc_generated_files/pwm2_16bit.c: 87:     PWM2GIR = 0x00;
-[e = _PWM2GIR -> -> 0 `i `uc ]
-"90
-[; ;mcc_generated_files/pwm2_16bit.c: 90:     PWM2GIE = 0x00;
-[e = _PWM2GIE -> -> 0 `i `uc ]
-"93
-[; ;mcc_generated_files/pwm2_16bit.c: 93:     PWM2S1CFG = 0x00;
-[e = _PWM2S1CFG -> -> 0 `i `uc ]
-"96
-[; ;mcc_generated_files/pwm2_16bit.c: 96:     PWM2S1P1L = 0x10;
-[e = _PWM2S1P1L -> -> 16 `i `uc ]
-"99
-[; ;mcc_generated_files/pwm2_16bit.c: 99:     PWM2S1P1H = 0x27;
-[e = _PWM2S1P1H -> -> 39 `i `uc ]
-"102
-[; ;mcc_generated_files/pwm2_16bit.c: 102:     PWM2S1P2L = 0x10;
-[e = _PWM2S1P2L -> -> 16 `i `uc ]
-"105
-[; ;mcc_generated_files/pwm2_16bit.c: 105:     PWM2S1P2H = 0x27;
-[e = _PWM2S1P2H -> -> 39 `i `uc ]
-"108
-[; ;mcc_generated_files/pwm2_16bit.c: 108:     PIR5bits.PWM2PIF = 0;
-[e = . . _PIR5bits 0 6 -> -> 0 `i `uc ]
-"111
-[; ;mcc_generated_files/pwm2_16bit.c: 111:     PIR5bits.PWM2IF = 0;
-[e = . . _PIR5bits 0 7 -> -> 0 `i `uc ]
-"114
-[; ;mcc_generated_files/pwm2_16bit.c: 114:     PWM2GIRbits.S1P1IF = 0;
-[e = . . _PWM2GIRbits 0 0 -> -> 0 `i `uc ]
-"117
-[; ;mcc_generated_files/pwm2_16bit.c: 117:     PWM2GIRbits.S1P2IF = 0;
-[e = . . _PWM2GIRbits 0 1 -> -> 0 `i `uc ]
-"120
-[; ;mcc_generated_files/pwm2_16bit.c: 120:     PIE5bits.PWM2IE = 0;
-[e = . . _PIE5bits 0 7 -> -> 0 `i `uc ]
-"123
-[; ;mcc_generated_files/pwm2_16bit.c: 123:     PIE5bits.PWM2PIE = 0;
-[e = . . _PIE5bits 0 6 -> -> 0 `i `uc ]
-"126
-[; ;mcc_generated_files/pwm2_16bit.c: 126:     PWM2_16BIT_Slice1Output1_SetInterruptHandler(PWM2_16BIT_Slice1Output1_DefaultInterruptHandler);
-[e ( _PWM2_16BIT_Slice1Output1_SetInterruptHandler (1 &U _PWM2_16BIT_Slice1Output1_DefaultInterruptHandler ]
-"127
-[; ;mcc_generated_files/pwm2_16bit.c: 127:     PWM2_16BIT_Slice1Output2_SetInterruptHandler(PWM2_16BIT_Slice1Output2_DefaultInterruptHandler);
-[e ( _PWM2_16BIT_Slice1Output2_SetInterruptHandler (1 &U _PWM2_16BIT_Slice1Output2_DefaultInterruptHandler ]
-"128
-[; ;mcc_generated_files/pwm2_16bit.c: 128:     PWM2_16BIT_Period_SetInterruptHandler(PWM2_16BIT_Period_DefaultInterruptHandler);
-[e ( _PWM2_16BIT_Period_SetInterruptHandler (1 &U _PWM2_16BIT_Period_DefaultInterruptHandler ]
-"131
-[; ;mcc_generated_files/pwm2_16bit.c: 131:     PWM2CON = 0x80;
-[e = _PWM2CON -> -> 128 `i `uc ]
-"132
-[; ;mcc_generated_files/pwm2_16bit.c: 132: }
-[e :UE 3299 ]
-}
-"134
-[; ;mcc_generated_files/pwm2_16bit.c: 134: void PWM2_16BIT_Enable()
-[v _PWM2_16BIT_Enable `(v ~T0 @X0 1 ef ]
-"135
-[; ;mcc_generated_files/pwm2_16bit.c: 135: {
-{
-[e :U _PWM2_16BIT_Enable ]
-[f ]
-"136
-[; ;mcc_generated_files/pwm2_16bit.c: 136:     PWM2CON |= 0x80;
-[e =| _PWM2CON -> -> 128 `i `Vuc ]
-"137
-[; ;mcc_generated_files/pwm2_16bit.c: 137: }
-[e :UE 3300 ]
-}
-"139
-[; ;mcc_generated_files/pwm2_16bit.c: 139: void PWM2_16BIT_Disable()
-[v _PWM2_16BIT_Disable `(v ~T0 @X0 1 ef ]
-"140
-[; ;mcc_generated_files/pwm2_16bit.c: 140: {
-{
-[e :U _PWM2_16BIT_Disable ]
-[f ]
-"141
-[; ;mcc_generated_files/pwm2_16bit.c: 141:     PWM2CON &= (~0x80);
-[e =& _PWM2CON -> ~ -> 128 `i `Vuc ]
-"142
-[; ;mcc_generated_files/pwm2_16bit.c: 142: }
-[e :UE 3301 ]
-}
-"144
-[; ;mcc_generated_files/pwm2_16bit.c: 144: void PWM2_16BIT_WritePeriodRegister(uint16_t periodCount)
-[v _PWM2_16BIT_WritePeriodRegister `(v ~T0 @X0 1 ef1`us ]
-"145
-[; ;mcc_generated_files/pwm2_16bit.c: 145: {
-{
-[e :U _PWM2_16BIT_WritePeriodRegister ]
-"144
-[; ;mcc_generated_files/pwm2_16bit.c: 144: void PWM2_16BIT_WritePeriodRegister(uint16_t periodCount)
-[v _periodCount `us ~T0 @X0 1 r1 ]
-"145
-[; ;mcc_generated_files/pwm2_16bit.c: 145: {
-[f ]
-"146
-[; ;mcc_generated_files/pwm2_16bit.c: 146:     PWM2PRL = (uint8_t)periodCount;
-[e = _PWM2PRL -> _periodCount `uc ]
-"147
-[; ;mcc_generated_files/pwm2_16bit.c: 147:     PWM2PRH = (uint8_t)(periodCount >> 8);
-[e = _PWM2PRH -> >> -> _periodCount `ui -> 8 `i `uc ]
-"148
-[; ;mcc_generated_files/pwm2_16bit.c: 148: }
-[e :UE 3302 ]
-}
-"150
-[; ;mcc_generated_files/pwm2_16bit.c: 150: void PWM2_16BIT_SetSlice1Output1DutyCycleRegister(uint16_t registerValue)
-[v _PWM2_16BIT_SetSlice1Output1DutyCycleRegister `(v ~T0 @X0 1 ef1`us ]
-"151
-[; ;mcc_generated_files/pwm2_16bit.c: 151: {
-{
-[e :U _PWM2_16BIT_SetSlice1Output1DutyCycleRegister ]
-"150
-[; ;mcc_generated_files/pwm2_16bit.c: 150: void PWM2_16BIT_SetSlice1Output1DutyCycleRegister(uint16_t registerValue)
-[v _registerValue `us ~T0 @X0 1 r1 ]
-"151
-[; ;mcc_generated_files/pwm2_16bit.c: 151: {
-[f ]
-"152
-[; ;mcc_generated_files/pwm2_16bit.c: 152:     PWM2S1P1L = (uint8_t)(registerValue);
-[e = _PWM2S1P1L -> _registerValue `uc ]
-"153
-[; ;mcc_generated_files/pwm2_16bit.c: 153:     PWM2S1P1H = (uint8_t)(registerValue >> 8);
-[e = _PWM2S1P1H -> >> -> _registerValue `ui -> 8 `i `uc ]
-"154
-[; ;mcc_generated_files/pwm2_16bit.c: 154: }
-[e :UE 3303 ]
-}
-"156
-[; ;mcc_generated_files/pwm2_16bit.c: 156: void PWM2_16BIT_SetSlice1Output2DutyCycleRegister(uint16_t registerValue)
-[v _PWM2_16BIT_SetSlice1Output2DutyCycleRegister `(v ~T0 @X0 1 ef1`us ]
-"157
-[; ;mcc_generated_files/pwm2_16bit.c: 157: {
-{
-[e :U _PWM2_16BIT_SetSlice1Output2DutyCycleRegister ]
-"156
-[; ;mcc_generated_files/pwm2_16bit.c: 156: void PWM2_16BIT_SetSlice1Output2DutyCycleRegister(uint16_t registerValue)
-[v _registerValue `us ~T0 @X0 1 r1 ]
-"157
-[; ;mcc_generated_files/pwm2_16bit.c: 157: {
-[f ]
-"158
-[; ;mcc_generated_files/pwm2_16bit.c: 158:     PWM2S1P2L = (uint8_t)(registerValue);
-[e = _PWM2S1P2L -> _registerValue `uc ]
-"159
-[; ;mcc_generated_files/pwm2_16bit.c: 159:     PWM2S1P2H = (uint8_t)(registerValue >> 8);
-[e = _PWM2S1P2H -> >> -> _registerValue `ui -> 8 `i `uc ]
-"160
-[; ;mcc_generated_files/pwm2_16bit.c: 160: }
+"5
+[; ;mppt.c: 5:     V_prev = 50.0;
+[e = _V_prev -> .50.0 `f ]
+"6
+[; ;mppt.c: 6:     P_prev = 300.0;
+[e = _P_prev -> .300.0 `f ]
+"7
+[; ;mppt.c: 7:     duty_cycle = 50.0;
+[e = _duty_cycle -> .50.0 `f ]
+"8
+[; ;mppt.c: 8: }
 [e :UE 3304 ]
 }
-"162
-[; ;mcc_generated_files/pwm2_16bit.c: 162: void PWM2_16BIT_LoadBufferRegisters(void)
-[v _PWM2_16BIT_LoadBufferRegisters `(v ~T0 @X0 1 ef ]
-"163
-[; ;mcc_generated_files/pwm2_16bit.c: 163: {
+"10
+[; ;mppt.c: 10: void mppt_cycle()
+[v _mppt_cycle `(v ~T0 @X0 1 ef ]
+"11
+[; ;mppt.c: 11: {
 {
-[e :U _PWM2_16BIT_LoadBufferRegisters ]
+[e :U _mppt_cycle ]
 [f ]
-"165
-[; ;mcc_generated_files/pwm2_16bit.c: 165:     PWM2CONbits.LD = 1;
-[e = . . _PWM2CONbits 0 2 -> -> 1 `i `uc ]
-"166
-[; ;mcc_generated_files/pwm2_16bit.c: 166: }
-[e :UE 3305 ]
+"12
+[; ;mppt.c: 12:      V_pv = ADC_GetSingleConversion(channel_ANA0) * (5.0 / 1023.0);
+[e = _V_pv -> * -> -> ( _ADC_GetSingleConversion (1 . `E23162 0 `ui `d / .5.0 .1023.0 `f ]
+"13
+[; ;mppt.c: 13:      I_pv = ADC_GetSingleConversion(channel_ANA1) * (5.0 / 1023.0);
+[e = _I_pv -> * -> -> ( _ADC_GetSingleConversion (1 . `E23162 1 `ui `d / .5.0 .1023.0 `f ]
+"14
+[; ;mppt.c: 14:      V_bat = ADC_GetSingleConversion(channel_ANA4) * (5.0 / 1023.0);
+[e = _V_bat -> * -> -> ( _ADC_GetSingleConversion (1 . `E23162 2 `ui `d / .5.0 .1023.0 `f ]
+"16
+[; ;mppt.c: 16:      P_pv = V_pv * I_pv;
+[e = _P_pv * _V_pv _I_pv ]
+"18
+[; ;mppt.c: 18:      if (P_pv > P_prev) {
+[e $ ! > _P_pv _P_prev 3306  ]
+{
+"19
+[; ;mppt.c: 19:           if (V_pv > V_prev) {
+[e $ ! > _V_pv _V_prev 3307  ]
+{
+"20
+[; ;mppt.c: 20:              duty_cycle -= 0.1;
+[e =- _duty_cycle -> .0.1 `f ]
+"21
+[; ;mppt.c: 21:       } else {
 }
-"168
-[; ;mcc_generated_files/pwm2_16bit.c: 168: void PWM2_16BIT_PWMI_ISR(void)
-[v _PWM2_16BIT_PWMI_ISR `(v ~T0 @X0 1 ef ]
-"169
-[; ;mcc_generated_files/pwm2_16bit.c: 169: {
+[e $U 3308  ]
+[e :U 3307 ]
 {
-[e :U _PWM2_16BIT_PWMI_ISR ]
-[f ]
-"170
-[; ;mcc_generated_files/pwm2_16bit.c: 170:     PIR5bits.PWM2IF = 0;
-[e = . . _PIR5bits 0 7 -> -> 0 `i `uc ]
-"171
-[; ;mcc_generated_files/pwm2_16bit.c: 171:     if((PWM2GIEbits.S1P1IE == 1) && (PWM2GIRbits.S1P1IF == 1))
-[e $ ! && == -> . . _PWM2GIEbits 0 0 `i -> 1 `i == -> . . _PWM2GIRbits 0 0 `i -> 1 `i 3307  ]
-"172
-[; ;mcc_generated_files/pwm2_16bit.c: 172:     {
-{
-"173
-[; ;mcc_generated_files/pwm2_16bit.c: 173:         PWM2GIRbits.S1P1IF = 0;
-[e = . . _PWM2GIRbits 0 0 -> -> 0 `i `uc ]
-"174
-[; ;mcc_generated_files/pwm2_16bit.c: 174:         if(PWM2_16BIT_Slice1Output1_InterruptHandler != ((void*)0))
-[e $ ! != _PWM2_16BIT_Slice1Output1_InterruptHandler -> -> -> 0 `i `*v `*F22885 3308  ]
-"175
-[; ;mcc_generated_files/pwm2_16bit.c: 175:             PWM2_16BIT_Slice1Output1_InterruptHandler();
-[e ( *U _PWM2_16BIT_Slice1Output1_InterruptHandler ..  ]
+"22
+[; ;mppt.c: 22:            duty_cycle += 0.1;
+[e =+ _duty_cycle -> .0.1 `f ]
+"23
+[; ;mppt.c: 23:       }
+}
 [e :U 3308 ]
-"176
-[; ;mcc_generated_files/pwm2_16bit.c: 176:     }
+"24
+[; ;mppt.c: 24:         } else {
 }
 [e $U 3309  ]
-"177
-[; ;mcc_generated_files/pwm2_16bit.c: 177:     else if((PWM2GIEbits.S1P2IE == 1) && (PWM2GIRbits.S1P2IF == 1))
-[e :U 3307 ]
-[e $ ! && == -> . . _PWM2GIEbits 0 1 `i -> 1 `i == -> . . _PWM2GIRbits 0 1 `i -> 1 `i 3310  ]
-"178
-[; ;mcc_generated_files/pwm2_16bit.c: 178:     {
+[e :U 3306 ]
 {
-"179
-[; ;mcc_generated_files/pwm2_16bit.c: 179:         PWM2GIRbits.S1P2IF = 0;
-[e = . . _PWM2GIRbits 0 1 -> -> 0 `i `uc ]
-"180
-[; ;mcc_generated_files/pwm2_16bit.c: 180:         if(PWM2_16BIT_Slice1Output2_InterruptHandler != ((void*)0))
-[e $ ! != _PWM2_16BIT_Slice1Output2_InterruptHandler -> -> -> 0 `i `*v `*F22886 3311  ]
-"181
-[; ;mcc_generated_files/pwm2_16bit.c: 181:             PWM2_16BIT_Slice1Output2_InterruptHandler();
-[e ( *U _PWM2_16BIT_Slice1Output2_InterruptHandler ..  ]
-[e :U 3311 ]
-"182
-[; ;mcc_generated_files/pwm2_16bit.c: 182:     }
+"25
+[; ;mppt.c: 25:       if (V_pv > V_prev) {
+[e $ ! > _V_pv _V_prev 3310  ]
+{
+"26
+[; ;mppt.c: 26:            duty_cycle += 0.1;
+[e =+ _duty_cycle -> .0.1 `f ]
+"27
+[; ;mppt.c: 27:       } else {
 }
+[e $U 3311  ]
 [e :U 3310 ]
+{
+"28
+[; ;mppt.c: 28:            duty_cycle -= 0.1;
+[e =- _duty_cycle -> .0.1 `f ]
+"29
+[; ;mppt.c: 29:       }
+}
+[e :U 3311 ]
+"30
+[; ;mppt.c: 30:  }
+}
 [e :U 3309 ]
-"183
-[; ;mcc_generated_files/pwm2_16bit.c: 183: }
-[e :UE 3306 ]
-}
-"185
-[; ;mcc_generated_files/pwm2_16bit.c: 185: void PWM2_16BIT_PWMPI_ISR(void)
-[v _PWM2_16BIT_PWMPI_ISR `(v ~T0 @X0 1 ef ]
-"186
-[; ;mcc_generated_files/pwm2_16bit.c: 186: {
-{
-[e :U _PWM2_16BIT_PWMPI_ISR ]
-[f ]
-"187
-[; ;mcc_generated_files/pwm2_16bit.c: 187:     PIR5bits.PWM2PIF = 0;
-[e = . . _PIR5bits 0 6 -> -> 0 `i `uc ]
-"188
-[; ;mcc_generated_files/pwm2_16bit.c: 188:     if(PWM2_16BIT_Period_InterruptHandler != ((void*)0))
-[e $ ! != _PWM2_16BIT_Period_InterruptHandler -> -> -> 0 `i `*v `*F22888 3313  ]
-"189
-[; ;mcc_generated_files/pwm2_16bit.c: 189:         PWM2_16BIT_Period_InterruptHandler();
-[e ( *U _PWM2_16BIT_Period_InterruptHandler ..  ]
+"32
+[; ;mppt.c: 32:      min_duty = 2 * V_bat - 2;
+[e = _min_duty - * -> -> 2 `i `f _V_bat -> -> 2 `i `f ]
+"33
+[; ;mppt.c: 33:      max_duty = min_duty + 1;
+[e = _max_duty + _min_duty -> -> 1 `i `f ]
+"34
+[; ;mppt.c: 34:      if (duty_cycle > max_duty) duty_cycle = max_duty;
+[e $ ! > _duty_cycle _max_duty 3312  ]
+[e = _duty_cycle _max_duty ]
+[e :U 3312 ]
+"35
+[; ;mppt.c: 35:      if (duty_cycle < min_duty) duty_cycle = min_duty;
+[e $ ! < _duty_cycle _min_duty 3313  ]
+[e = _duty_cycle _min_duty ]
 [e :U 3313 ]
-"190
-[; ;mcc_generated_files/pwm2_16bit.c: 190: }
-[e :UE 3312 ]
-}
-"192
-[; ;mcc_generated_files/pwm2_16bit.c: 192: void PWM2_16BIT_Slice1Output1_SetInterruptHandler(void (* InterruptHandler)(void))
-[v _PWM2_16BIT_Slice1Output1_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F22890 ]
-"193
-[; ;mcc_generated_files/pwm2_16bit.c: 193: {
-{
-[e :U _PWM2_16BIT_Slice1Output1_SetInterruptHandler ]
-"192
-[; ;mcc_generated_files/pwm2_16bit.c: 192: void PWM2_16BIT_Slice1Output1_SetInterruptHandler(void (* InterruptHandler)(void))
-[v _InterruptHandler `*F22892 ~T0 @X0 1 r1 ]
-"193
-[; ;mcc_generated_files/pwm2_16bit.c: 193: {
-[f ]
-"194
-[; ;mcc_generated_files/pwm2_16bit.c: 194:     PWM2_16BIT_Slice1Output1_InterruptHandler = InterruptHandler;
-[e = _PWM2_16BIT_Slice1Output1_InterruptHandler _InterruptHandler ]
-"195
-[; ;mcc_generated_files/pwm2_16bit.c: 195: }
-[e :UE 3314 ]
-}
-"197
-[; ;mcc_generated_files/pwm2_16bit.c: 197: void PWM2_16BIT_Slice1Output2_SetInterruptHandler(void (* InterruptHandler)(void))
-[v _PWM2_16BIT_Slice1Output2_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F22895 ]
-"198
-[; ;mcc_generated_files/pwm2_16bit.c: 198: {
-{
-[e :U _PWM2_16BIT_Slice1Output2_SetInterruptHandler ]
-"197
-[; ;mcc_generated_files/pwm2_16bit.c: 197: void PWM2_16BIT_Slice1Output2_SetInterruptHandler(void (* InterruptHandler)(void))
-[v _InterruptHandler `*F22897 ~T0 @X0 1 r1 ]
-"198
-[; ;mcc_generated_files/pwm2_16bit.c: 198: {
-[f ]
-"199
-[; ;mcc_generated_files/pwm2_16bit.c: 199:     PWM2_16BIT_Slice1Output2_InterruptHandler = InterruptHandler;
-[e = _PWM2_16BIT_Slice1Output2_InterruptHandler _InterruptHandler ]
-"200
-[; ;mcc_generated_files/pwm2_16bit.c: 200: }
-[e :UE 3315 ]
-}
-"202
-[; ;mcc_generated_files/pwm2_16bit.c: 202: void PWM2_16BIT_Period_SetInterruptHandler(void (* InterruptHandler)(void))
-[v _PWM2_16BIT_Period_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F22900 ]
-"203
-[; ;mcc_generated_files/pwm2_16bit.c: 203: {
-{
-[e :U _PWM2_16BIT_Period_SetInterruptHandler ]
-"202
-[; ;mcc_generated_files/pwm2_16bit.c: 202: void PWM2_16BIT_Period_SetInterruptHandler(void (* InterruptHandler)(void))
-[v _InterruptHandler `*F22902 ~T0 @X0 1 r1 ]
-"203
-[; ;mcc_generated_files/pwm2_16bit.c: 203: {
-[f ]
-"204
-[; ;mcc_generated_files/pwm2_16bit.c: 204:     PWM2_16BIT_Period_InterruptHandler = InterruptHandler;
-[e = _PWM2_16BIT_Period_InterruptHandler _InterruptHandler ]
-"205
-[; ;mcc_generated_files/pwm2_16bit.c: 205: }
-[e :UE 3316 ]
-}
-"207
-[; ;mcc_generated_files/pwm2_16bit.c: 207: static void PWM2_16BIT_Slice1Output1_DefaultInterruptHandler(void)
-[v _PWM2_16BIT_Slice1Output1_DefaultInterruptHandler `(v ~T0 @X0 1 sf ]
-"208
-[; ;mcc_generated_files/pwm2_16bit.c: 208: {
-{
-[e :U _PWM2_16BIT_Slice1Output1_DefaultInterruptHandler ]
-[f ]
-"211
-[; ;mcc_generated_files/pwm2_16bit.c: 211: }
-[e :UE 3317 ]
-}
-"213
-[; ;mcc_generated_files/pwm2_16bit.c: 213: static void PWM2_16BIT_Slice1Output2_DefaultInterruptHandler(void)
-[v _PWM2_16BIT_Slice1Output2_DefaultInterruptHandler `(v ~T0 @X0 1 sf ]
-"214
-[; ;mcc_generated_files/pwm2_16bit.c: 214: {
-{
-[e :U _PWM2_16BIT_Slice1Output2_DefaultInterruptHandler ]
-[f ]
-"217
-[; ;mcc_generated_files/pwm2_16bit.c: 217: }
-[e :UE 3318 ]
-}
-"219
-[; ;mcc_generated_files/pwm2_16bit.c: 219: static void PWM2_16BIT_Period_DefaultInterruptHandler(void)
-[v _PWM2_16BIT_Period_DefaultInterruptHandler `(v ~T0 @X0 1 sf ]
-"220
-[; ;mcc_generated_files/pwm2_16bit.c: 220: {
-{
-[e :U _PWM2_16BIT_Period_DefaultInterruptHandler ]
-[f ]
-"223
-[; ;mcc_generated_files/pwm2_16bit.c: 223: }
-[e :UE 3319 ]
+"37
+[; ;mppt.c: 37:         uint16_t uint_duty_cycle = (uint16_t)(
+[v _uint_duty_cycle `us ~T0 @X0 1 a ]
+[e = _uint_duty_cycle -> * / -> _duty_cycle `d .100.0 -> + << -> _PWM1S1P1H `i -> 8 `i -> _PWM1S1P1L `i `d `us ]
+"40
+[; ;mppt.c: 40:      PWM1_16BIT_SetSlice1Output1DutyCycleRegister(uint_duty_cycle);
+[e ( _PWM1_16BIT_SetSlice1Output1DutyCycleRegister (1 _uint_duty_cycle ]
+"42
+[; ;mppt.c: 42:      P_prev = P_pv;
+[e = _P_prev _P_pv ]
+"43
+[; ;mppt.c: 43:      V_prev = V_pv;
+[e = _V_prev _V_pv ]
+"45
+[; ;mppt.c: 45:      _delay((unsigned long)((100)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"46
+[; ;mppt.c: 46: }
+[e :UE 3305 ]
 }

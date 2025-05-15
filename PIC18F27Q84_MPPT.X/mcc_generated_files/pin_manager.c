@@ -66,7 +66,7 @@ void PIN_MANAGER_Initialize(void)
     */
     TRISE = 0x08;
     TRISA = 0xFF;
-    TRISB = 0xF8;
+    TRISB = 0xFC;
     TRISC = 0xE2;
 
     /**
@@ -115,7 +115,6 @@ void PIN_MANAGER_Initialize(void)
 	
     RB1PPS = 0x18;   //RB1->PWM1_16BIT:PWM11;    
     RB0PPS = 0x46;   //RB0->CAN1:CANTX;    
-    RB2PPS = 0x1A;   //RB2->PWM2_16BIT:PWM21;    
     CANRXPPS = 0x0B;   //RB3->CAN1:CANRX;    
 }
   

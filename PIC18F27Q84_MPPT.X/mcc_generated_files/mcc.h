@@ -53,9 +53,8 @@
 #include <stdbool.h>
 #include <conio.h>
 #include "adc.h"
-#include "pwm2_16bit.h"
-#include "can1.h"
 #include "pwm1_16bit.h"
+#include "can1.h"
 
 
 

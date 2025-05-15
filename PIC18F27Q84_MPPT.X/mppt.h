@@ -28,17 +28,28 @@
 
 // This is a guard condition so that contents of this file are not included
 // more than once.  
-#ifndef TEST_H
-#define	TEST_H
+#ifndef MPPT_H
+#define	MPPT_H
 
+#include <xc.h> // include processor files - each processor file is guarded. 
 #include <xc.h>
 #include "mcc_generated_files/mcc.h"
-#include "can_bus.h"
+//#include "mcc_generated_files/adc.h"
+//#include "mcc_generated_files/pwm1_16bit.h"
 
+#define DUTY_CYCLE_STEP 0.1
 
-void led_test(void);
-void can_receive_test();
-void can_send_test();
+float V_bat;
+float V_pv;
+float I_pv;
+float P_pv;
+float V_prev;
+float P_prev;
+float duty_cycle;
+float max_duty, min_duty;
+
+void mppt_init();
+void mppt_cycle();
 
 #ifdef	__cplusplus
 extern "C" {

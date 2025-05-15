@@ -60,10 +60,7 @@ uint8_t tx_data[8];    // TX data bytes buffer
 */
 
 //mppt
-float V_bat, V_pv, I_pv, P_pv, V_prev = 50.0, P_prev = 300.0;
-float duty_cycle = 50.0;
-float max_duty, min_duty;
-const float DUTY_CYCLE_STEP = 0.1;
+
 
 void can_light_command();
 void mppt_loop();
@@ -73,10 +70,22 @@ void mppt_loop();
  */
 void main(void)
 {
-    // Initialize the device
+    // Initialize the device (auto generated)
     SYSTEM_Initialize();
+    
+    /*
+     * here are the testing to do in this order (one at the time)
+     * to ensure hardware is working fine
+     * they're all infinite loop
+    */
     led_test();
+    //can_send_test();
+    //can_receive_test();
+    
+    // === end of test ===
 
+    // Interruption code (auto generated)
+    
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
     // Use the following macros to:
@@ -86,64 +95,13 @@ void main(void)
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
-    memset( &msg_rx, 0 , sizeof(msg_rx) );
     
-    nrMsg = 0;
-    //led_test();
-  __delay_ms(50);
+    // === end of interrupt (auto generated) ===
 
     while (1)
     {
-        //led2_Toggle();
-        //led0_Toggle();
         __delay_ms(50);
-        //__delay_ms(4000);
-        
-        //can_send(0x444);
-        //can_light_command();
+        led0_Toggle();
     }
 }
 
-/*
-void mppt_loop()
-{
-    while (1) {
-        ADC_SelectContext(CONTEXT_1);
-    	V_pv = ADC_GetSingleConversion(channel_ANA0) * (5.0 / 1023.0);
-        
-        ADC_SelectContext(CONTEXT_2);
-    	I_pv = ADC_GetSingleConversion(channel_ANA0) * (5.0 / 1023.0);
-        
-        ADC_SelectContext(CONTEXT_3);
-    	V_bat = ADC_GetSingleConversion(channel_ANA0) * (5.0 / 1023.0);
-
-    	P_pv = V_pv * I_pv;
-
-    	if (P_pv > P_prev) {
-        		if (V_pv > V_prev) {
-          			duty_cycle -= DUTY_CYCLE_STEP;
-    		} else {
-        			duty_cycle += DUTY_CYCLE_STEP;
-    		}
-	} else {
-    		if (V_pv > V_prev) {
-        			duty_cycle += DUTY_CYCLE_STEP;
-    		} else {
-        			duty_cycle -= DUTY_CYCLE_STEP;
-    		}
-	}
-
-    	min_duty = 2 * V_bat - 2;
-    	max_duty = min_duty + 1;
-    	if (duty_cycle > max_duty) duty_cycle = max_duty;
-    	if (duty_cycle < min_duty) duty_cycle = min_duty;
-
-    	setPWM(duty_cycle / 100.0);
-
-    	P_prev = P_pv;
-    	V_prev = V_pv;
-
-    	__delay_ms(100);
-	}
-}
- * */

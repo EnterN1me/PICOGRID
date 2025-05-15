@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_MPPT.X/main.c</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_MPPT.X/mcc_generated_files/adc.h</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_MPPT.X/mppt.c</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_MPPT.X/mppt.h</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_MPPT.X/mcc_generated_files/pwm1_16bit.h</file>
+            <file>file:/C:/Users/EnterN1me/Documents/INSA/Semestre%208/Projet%20S8/PICOGRID/PIC18F27Q84_MPPT.X/can_bus.c</file>
+        </group>
     </open-files>
 </project-private>

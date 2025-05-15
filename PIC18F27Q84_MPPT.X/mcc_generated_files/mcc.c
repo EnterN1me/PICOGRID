@@ -50,10 +50,9 @@
 void SYSTEM_Initialize(void)
 {
     PMD_Initialize();
-    ADC_Initialize();
     PIN_MANAGER_Initialize();
+    ADC_Initialize();
     OSCILLATOR_Initialize();
-    PWM2_16BIT_Initialize();
     CAN1_Initialize();
     PWM1_16BIT_Initialize();
 }

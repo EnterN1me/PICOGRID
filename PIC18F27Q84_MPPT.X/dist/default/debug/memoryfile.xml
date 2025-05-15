@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/debug\PIC18F27Q84_BASIC.X.debug.hex">
+  <executable name="dist/default/debug\PIC18F27Q84_MPPT.X.debug.hex">
     <memory name="program">
       <units>bytes</units>
       <length>131072</length>
-      <used>2538</used>
-      <free>128534</free>
+      <used>6736</used>
+      <free>124336</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>12800</length>
-      <used>106</used>
-      <free>12694</free>
+      <used>181</used>
+      <free>12619</free>
     </memory>
   </executable>
 </project>

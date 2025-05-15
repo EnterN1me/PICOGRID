@@ -73,9 +73,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "24107
 [; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 24107: extern volatile unsigned char RB0PPS __attribute__((address(0x209)));
 [v _RB0PPS `Vuc ~T0 @X0 0 e@521 ]
-"24207
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 24207: extern volatile unsigned char RB2PPS __attribute__((address(0x20B)));
-[v _RB2PPS `Vuc ~T0 @X0 0 e@523 ]
 "24907
 [; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 24907: extern volatile unsigned char CANRXPPS __attribute__((address(0x23D)));
 [v _CANRXPPS `Vuc ~T0 @X0 0 e@573 ]
@@ -3631,8 +3628,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 68:     TRISA = 0xFF;
 [e = _TRISA -> -> 255 `i `uc ]
 "69
-[; ;mcc_generated_files/pin_manager.c: 69:     TRISB = 0xF8;
-[e = _TRISB -> -> 248 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 69:     TRISB = 0xFC;
+[e = _TRISB -> -> 252 `i `uc ]
 "70
 [; ;mcc_generated_files/pin_manager.c: 70:     TRISC = 0xE2;
 [e = _TRISC -> -> 226 `i `uc ]
@@ -3694,24 +3691,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 117:     RB0PPS = 0x46;
 [e = _RB0PPS -> -> 70 `i `uc ]
 "118
-[; ;mcc_generated_files/pin_manager.c: 118:     RB2PPS = 0x1A;
-[e = _RB2PPS -> -> 26 `i `uc ]
-"119
-[; ;mcc_generated_files/pin_manager.c: 119:     CANRXPPS = 0x0B;
+[; ;mcc_generated_files/pin_manager.c: 118:     CANRXPPS = 0x0B;
 [e = _CANRXPPS -> -> 11 `i `uc ]
-"120
-[; ;mcc_generated_files/pin_manager.c: 120: }
+"119
+[; ;mcc_generated_files/pin_manager.c: 119: }
 [e :UE 3299 ]
 }
-"122
-[; ;mcc_generated_files/pin_manager.c: 122: void PIN_MANAGER_IOC(void)
+"121
+[; ;mcc_generated_files/pin_manager.c: 121: void PIN_MANAGER_IOC(void)
 [v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
-"123
-[; ;mcc_generated_files/pin_manager.c: 123: {
+"122
+[; ;mcc_generated_files/pin_manager.c: 122: {
 {
 [e :U _PIN_MANAGER_IOC ]
 [f ]
-"124
-[; ;mcc_generated_files/pin_manager.c: 124: }
+"123
+[; ;mcc_generated_files/pin_manager.c: 123: }
 [e :UE 3300 ]
 }

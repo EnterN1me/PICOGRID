@@ -11,70 +11,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./mcc_generated_files/can_types.h: 79: {
 [s S3303 `ul 1 `S3301 1 `*uc 1 ]
 [n S3303 . msgId field data ]
-"64 main.c
-[; ;main.c: 64: CAN_TX_MSG_REQUEST_STATUS tx_status ;
-[c E23318 0 1 2 3 .. ]
-[n E23318 . CAN_TX_MSG_REQUEST_SUCCESS CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR CAN_TX_MSG_REQUEST_BRS_ERROR CAN_TX_MSG_REQUEST_FIFO_FULL  ]
+"27 ./../PIC18F27Q84_BASIC.X/can_bus.h
+[; ;./../PIC18F27Q84_BASIC.X/can_bus.h: 27: CAN_TX_MSG_REQUEST_STATUS tx_status ;
+[c E23322 0 1 2 3 .. ]
+[n E23322 . CAN_TX_MSG_REQUEST_SUCCESS CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR CAN_TX_MSG_REQUEST_BRS_ERROR CAN_TX_MSG_REQUEST_FIFO_FULL  ]
 [p mainexit ]
-"73 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 73: void SYSTEM_Initialize(void);
+"72 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"29 C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/string.h
-[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/string.h: 29: void *memset (void *, int, size_t);
-[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
-[v F205 `(v ~T0 @X0 1 tf1`ul ]
-"20 C:\Program Files\Microchip\xc8\v3.00\pic\include/builtins.h
-[v __delay `JF205 ~T0 @X0 0 e ]
-[p i __delay ]
-"72 main.c
-[; ;main.c: 72: void can_light_command();
-[v _can_light_command `(v ~T0 @X0 0 e? ]
-"813 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 813: uint8_t CAN1_ReceivedMessageCountGet(void);
-[v _CAN1_ReceivedMessageCountGet `(uc ~T0 @X0 0 ef ]
-"231
-[; ;./mcc_generated_files/can1.h: 231: _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
-[v _CAN1_Receive `(a ~T0 @X0 0 ef1`*S3303 ]
-"2642 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h
-[s S3118 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3118 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
-"2641
-[u S3117 `S3118 1 ]
-[n S3117 . . ]
-"2653
-[v _LATCbits `VS3117 ~T0 @X0 0 e@1216 ]
-"157 main.c
-[; ;main.c: 157:     msg_tx.field.formatType = CAN_2_0_FORMAT;
-[c E23314 0 1 .. ]
-[n E23314 . CAN_2_0_FORMAT CAN_FD_FORMAT  ]
-"158
-[; ;main.c: 158:     msg_tx.field.brs = CAN_NON_BRS_MODE;
-[c E23302 0 1 .. ]
-[n E23302 . CAN_NON_BRS_MODE CAN_BRS_MODE  ]
-"159
-[; ;main.c: 159:     msg_tx.field.frameType = CAN_FRAME_DATA;
-[c E23310 0 1 .. ]
-[n E23310 . CAN_FRAME_DATA CAN_FRAME_RTR  ]
-"160
-[; ;main.c: 160:     msg_tx.field.idType = CAN_FRAME_STD;
-[c E23306 0 1 .. ]
-[n E23306 . CAN_FRAME_STD CAN_FRAME_EXT  ]
-"161
-[; ;main.c: 161:     msg_tx.field.dlc = DLC_8;
-[c E23343 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 .. ]
-[n E23343 . DLC_0 DLC_1 DLC_2 DLC_3 DLC_4 DLC_5 DLC_6 DLC_7 DLC_8 DLC_12 DLC_16 DLC_20 DLC_24 DLC_32 DLC_48 DLC_64  ]
-"173
-[; ;main.c: 173:     if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))
-[c E23339 0 1 .. ]
-[n E23339 . CAN_TX_FIFO_FULL CAN_TX_FIFO_AVAILABLE  ]
-[c E23361 0 .. ]
-[n E23361 . TXQ  ]
-"771 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 771: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
-[v _CAN1_TransmitFIFOStatusGet `(E23339 ~T0 @X0 0 ef1`CE23361 ]
-"290
-[; ;./mcc_generated_files/can1.h: 290: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
-[v _CAN1_Transmit `(E23318 ~T0 @X0 0 ef2`CE23361`*S3303 ]
+"39 ./../PIC18F27Q84_BASIC.X/test.h
+[; ;./../PIC18F27Q84_BASIC.X/test.h: 39: void led_test(void);
+[v _led_test `(v ~T0 @X0 0 ef ]
+"52 ./mppt.h
+[; ;./mppt.h: 52: void mppt_cycle();
+[v _mppt_cycle `(v ~T0 @X0 0 e? ]
 "304 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 304: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3603,288 +3553,83 @@ Version 4.0 HI-TECH Software Intermediate Code
 "69910
 [; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 69910: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"61 main.c
-[; ;main.c: 61: CAN_MSG_OBJ msg_tx;
+"24 ./../PIC18F27Q84_BASIC.X/can_bus.h
+[; ;./../PIC18F27Q84_BASIC.X/can_bus.h: 24: CAN_MSG_OBJ msg_tx;
 [v _msg_tx `S3303 ~T0 @X0 1 e ]
-"62
-[; ;main.c: 62: uint8_t tx_data[8];
+"25
+[; ;./../PIC18F27Q84_BASIC.X/can_bus.h: 25: uint8_t tx_data[8];
 [v _tx_data `uc ~T0 @X0 -> 8 `i e ]
-"63
-[; ;main.c: 63: uint8_t tx_success;
+"26
+[; ;./../PIC18F27Q84_BASIC.X/can_bus.h: 26: uint8_t tx_success;
 [v _tx_success `uc ~T0 @X0 1 e ]
-"64
-[; ;main.c: 64: CAN_TX_MSG_REQUEST_STATUS tx_status ;
-[v _tx_status `E23318 ~T0 @X0 1 e ]
-"66
-[; ;main.c: 66: CAN_MSG_OBJ msg_rx;
+"27
+[; ;./../PIC18F27Q84_BASIC.X/can_bus.h: 27: CAN_TX_MSG_REQUEST_STATUS tx_status ;
+[v _tx_status `E23322 ~T0 @X0 1 e ]
+"30
+[; ;./../PIC18F27Q84_BASIC.X/can_bus.h: 30: CAN_MSG_OBJ msg_rx;
 [v _msg_rx `S3303 ~T0 @X0 1 e ]
-"67
-[; ;main.c: 67: uint8_t rx_buff[DLC_8];
+"31
+[; ;./../PIC18F27Q84_BASIC.X/can_bus.h: 31: uint8_t rx_buff[DLC_8];
 [v _rx_buff `uc ~T0 @X0 -> 8 `i e ]
-"68
-[; ;main.c: 68: uint8_t nrMsg;
+"32
+[; ;./../PIC18F27Q84_BASIC.X/can_bus.h: 32: uint8_t nrMsg;
 [v _nrMsg `uc ~T0 @X0 1 e ]
+"42 ./mppt.h
+[; ;./mppt.h: 42: float V_bat;
+[v _V_bat `f ~T0 @X0 1 e ]
+"43
+[; ;./mppt.h: 43: float V_pv;
+[v _V_pv `f ~T0 @X0 1 e ]
+"44
+[; ;./mppt.h: 44: float I_pv;
+[v _I_pv `f ~T0 @X0 1 e ]
+"45
+[; ;./mppt.h: 45: float P_pv;
+[v _P_pv `f ~T0 @X0 1 e ]
+"46
+[; ;./mppt.h: 46: float V_prev;
+[v _V_prev `f ~T0 @X0 1 e ]
+"47
+[; ;./mppt.h: 47: float P_prev;
+[v _P_prev `f ~T0 @X0 1 e ]
+"48
+[; ;./mppt.h: 48: float duty_cycle;
+[v _duty_cycle `f ~T0 @X0 1 e ]
+"49
+[; ;./mppt.h: 49: float max_duty, min_duty;
+[v _max_duty `f ~T0 @X0 1 e ]
+[v _min_duty `f ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"77
-[; ;main.c: 77: void main(void)
+"62 main.c
+[; ;main.c: 62: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"78
-[; ;main.c: 78: {
+"63
+[; ;main.c: 63: {
 {
 [e :U _main ]
 [f ]
-"80
-[; ;main.c: 80:     SYSTEM_Initialize();
+"65
+[; ;main.c: 65:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"91
-[; ;main.c: 91:     memset( &msg_rx, 0 , sizeof(msg_rx) );
-[e ( _memset (3 , , -> &U _msg_rx `*v -> 0 `i -> # _msg_rx `ui ]
-"93
-[; ;main.c: 93:     nrMsg = 0;
-[e = _nrMsg -> -> 0 `i `uc ]
-"95
-[; ;main.c: 95:   _delay((unsigned long)((50)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"97
-[; ;main.c: 97:     while (1)
-[e :U 3307 ]
-"98
-[; ;main.c: 98:     {
-{
-"101
-[; ;main.c: 101:         _delay((unsigned long)((50)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"105
-[; ;main.c: 105:         can_light_command();
-[e ( _can_light_command ..  ]
-"106
-[; ;main.c: 106:     }
-}
-[e :U 3306 ]
-[e $U 3307  ]
+"72
+[; ;main.c: 72:     led_test();
+[e ( _led_test ..  ]
+"92
+[; ;main.c: 92:     while (1)
 [e :U 3308 ]
-"107
-[; ;main.c: 107: }
-[e :UE 3305 ]
-}
-"109
-[; ;main.c: 109: void can_receive(){
-[v _can_receive `(v ~T0 @X0 1 ef ]
+"93
+[; ;main.c: 93:     {
 {
-[e :U _can_receive ]
-[f ]
-"110
-[; ;main.c: 110:     nrMsg = CAN1_ReceivedMessageCountGet();
-[e = _nrMsg ( _CAN1_ReceivedMessageCountGet ..  ]
-"111
-[; ;main.c: 111:     if(nrMsg > 0)
-[e $ ! > -> _nrMsg `i -> 0 `i 3310  ]
-"112
-[; ;main.c: 112:     {
-{
-"113
-[; ;main.c: 113:         if(1 == CAN1_Receive(&msg_rx))
-[e $ ! == -> 1 `i -> ( _CAN1_Receive (1 &U _msg_rx `i 3311  ]
-"114
-[; ;main.c: 114:        {
-{
-"115
-[; ;main.c: 115:            for(uint8_t i=0; i<msg_rx.field.dlc; i++)
-{
-[v _i `uc ~T0 @X0 1 a ]
-[e = _i -> -> 0 `i `uc ]
-[e $U 3315  ]
-[e :U 3312 ]
-"116
-[; ;main.c: 116:            {
-{
-"117
-[; ;main.c: 117:              rx_buff[i] = msg_rx.data[i];
-[e = *U + &U _rx_buff * -> _i `ux -> -> # *U &U _rx_buff `ui `ux *U + . _msg_rx 2 * -> _i `ux -> -> # *U . _msg_rx 2 `ui `ux ]
-"118
-[; ;main.c: 118:            }
+"94
+[; ;main.c: 94:         mppt_cycle();
+[e ( _mppt_cycle ..  ]
+"95
+[; ;main.c: 95:     }
 }
-[e ++ _i -> -> 1 `i `uc ]
-[e :U 3315 ]
-[e $ < -> _i `i -> . . . _msg_rx 1 1 2 `i 3312  ]
-[e :U 3313 ]
-}
-"119
-[; ;main.c: 119:            if(msg_rx.field.dlc>0)
-[e $ ! > -> . . . _msg_rx 1 1 2 `i -> 0 `i 3316  ]
-"120
-[; ;main.c: 120:            {
-{
-"122
-[; ;main.c: 122:           }
-}
-[e :U 3316 ]
-"123
-[; ;main.c: 123:       }
-}
-[e :U 3311 ]
-"124
-[; ;main.c: 124:       nrMsg--;
-[e -- _nrMsg -> -> 1 `i `uc ]
-"125
-[; ;main.c: 125:     }
-}
-[e :U 3310 ]
-"126
-[; ;main.c: 126:  }
-[e :UE 3309 ]
-}
-"129
-[; ;main.c: 129: void can_light_command()
-[v _can_light_command `(v ~T0 @X0 1 ef ]
-"130
-[; ;main.c: 130: {
-{
-[e :U _can_light_command ]
-[f ]
-"131
-[; ;main.c: 131:     nrMsg = CAN1_ReceivedMessageCountGet();
-[e = _nrMsg ( _CAN1_ReceivedMessageCountGet ..  ]
-"132
-[; ;main.c: 132:     if(nrMsg > 0)
-[e $ ! > -> _nrMsg `i -> 0 `i 3318  ]
-"133
-[; ;main.c: 133:     {
-{
-"134
-[; ;main.c: 134:         if(1 == CAN1_Receive(&msg_rx))
-[e $ ! == -> 1 `i -> ( _CAN1_Receive (1 &U _msg_rx `i 3319  ]
-"135
-[; ;main.c: 135:        {
-{
-"136
-[; ;main.c: 136:            for(uint8_t i=0; i<msg_rx.field.dlc; i++)
-{
-[v _i `uc ~T0 @X0 1 a ]
-[e = _i -> -> 0 `i `uc ]
-[e $U 3323  ]
-[e :U 3320 ]
-"137
-[; ;main.c: 137:            {
-{
-"138
-[; ;main.c: 138:              rx_buff[i] = msg_rx.data[i];
-[e = *U + &U _rx_buff * -> _i `ux -> -> # *U &U _rx_buff `ui `ux *U + . _msg_rx 2 * -> _i `ux -> -> # *U . _msg_rx 2 `ui `ux ]
-"139
-[; ;main.c: 139:            }
-}
-[e ++ _i -> -> 1 `i `uc ]
-[e :U 3323 ]
-[e $ < -> _i `i -> . . . _msg_rx 1 1 2 `i 3320  ]
-[e :U 3321 ]
-}
-"140
-[; ;main.c: 140:            if(msg_rx.field.dlc>0)
-[e $ ! > -> . . . _msg_rx 1 1 2 `i -> 0 `i 3324  ]
-"141
-[; ;main.c: 141:            {
-{
-"142
-[; ;main.c: 142:             LATCbits.LATC2 = rx_buff[0];
-[e = . . _LATCbits 0 2 *U + &U _rx_buff * -> -> -> 0 `i `ui `ux -> -> # *U &U _rx_buff `ui `ux ]
-"143
-[; ;main.c: 143:             LATCbits.LATC3 = rx_buff[1];
-[e = . . _LATCbits 0 3 *U + &U _rx_buff * -> -> -> 1 `i `ui `ux -> -> # *U &U _rx_buff `ui `ux ]
-"144
-[; ;main.c: 144:             LATCbits.LATC4 = rx_buff[2];
-[e = . . _LATCbits 0 4 *U + &U _rx_buff * -> -> -> 2 `i `ui `ux -> -> # *U &U _rx_buff `ui `ux ]
-"145
-[; ;main.c: 145:           }
-}
-[e :U 3324 ]
-"146
-[; ;main.c: 146:       }
-}
-[e :U 3319 ]
-"147
-[; ;main.c: 147:       nrMsg--;
-[e -- _nrMsg -> -> 1 `i `uc ]
-"148
-[; ;main.c: 148:    }
-}
-[e :U 3318 ]
-"149
-[; ;main.c: 149:  }
-[e :UE 3317 ]
-}
-"152
-[; ;main.c: 152: void can_send()
-[v _can_send `(v ~T0 @X0 1 ef ]
-"153
-[; ;main.c: 153: {
-{
-[e :U _can_send ]
-[f ]
-"154
-[; ;main.c: 154:     memset( &msg_tx, 0 , sizeof(msg_tx) );
-[e ( _memset (3 , , -> &U _msg_tx `*v -> 0 `i -> # _msg_tx `ui ]
-"156
-[; ;main.c: 156:     msg_tx.msgId = 0x444;
-[e = . _msg_tx 0 -> -> -> 1092 `i `l `ul ]
-"157
-[; ;main.c: 157:     msg_tx.field.formatType = CAN_2_0_FORMAT;
-[e = . . . _msg_tx 1 1 3 -> . `E23314 0 `uc ]
-"158
-[; ;main.c: 158:     msg_tx.field.brs = CAN_NON_BRS_MODE;
-[e = . . . _msg_tx 1 1 4 -> . `E23302 0 `uc ]
-"159
-[; ;main.c: 159:     msg_tx.field.frameType = CAN_FRAME_DATA;
-[e = . . . _msg_tx 1 1 1 -> . `E23310 0 `uc ]
-"160
-[; ;main.c: 160:     msg_tx.field.idType = CAN_FRAME_STD;
-[e = . . . _msg_tx 1 1 0 -> . `E23306 0 `uc ]
-"161
-[; ;main.c: 161:     msg_tx.field.dlc = DLC_8;
-[e = . . . _msg_tx 1 1 2 -> . `E23343 8 `uc ]
-"162
-[; ;main.c: 162:     msg_tx.data = tx_data;
-[e = . _msg_tx 2 &U _tx_data ]
-"164
-[; ;main.c: 164:     tx_data[0] = 0x40;
-[e = *U + &U _tx_data * -> -> -> 0 `i `ui `ux -> -> # *U &U _tx_data `ui `ux -> -> 64 `i `uc ]
-"165
-[; ;main.c: 165:     tx_data[1] = 0x11;
-[e = *U + &U _tx_data * -> -> -> 1 `i `ui `ux -> -> # *U &U _tx_data `ui `ux -> -> 17 `i `uc ]
-"166
-[; ;main.c: 166:     tx_data[2] = 0x22;
-[e = *U + &U _tx_data * -> -> -> 2 `i `ui `ux -> -> # *U &U _tx_data `ui `ux -> -> 34 `i `uc ]
-"167
-[; ;main.c: 167:     tx_data[3] = 0x33;
-[e = *U + &U _tx_data * -> -> -> 3 `i `ui `ux -> -> # *U &U _tx_data `ui `ux -> -> 51 `i `uc ]
-"168
-[; ;main.c: 168:     tx_data[4] = 0x40;
-[e = *U + &U _tx_data * -> -> -> 4 `i `ui `ux -> -> # *U &U _tx_data `ui `ux -> -> 64 `i `uc ]
-"169
-[; ;main.c: 169:     tx_data[5] = 0x50;
-[e = *U + &U _tx_data * -> -> -> 5 `i `ui `ux -> -> # *U &U _tx_data `ui `ux -> -> 80 `i `uc ]
-"170
-[; ;main.c: 170:     tx_data[6] = 0x60;
-[e = *U + &U _tx_data * -> -> -> 6 `i `ui `ux -> -> # *U &U _tx_data `ui `ux -> -> 96 `i `uc ]
-"171
-[; ;main.c: 171:     tx_data[7] = 0x70;
-[e = *U + &U _tx_data * -> -> -> 7 `i `ui `ux -> -> # *U &U _tx_data `ui `ux -> -> 112 `i `uc ]
-"173
-[; ;main.c: 173:     if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))
-[e $ ! == -> . `E23339 1 `ui & -> ( _CAN1_TransmitFIFOStatusGet (1 . `E23361 0 `ui -> . `E23339 1 `ui 3326  ]
-"174
-[; ;main.c: 174:     {
-{
-"175
-[; ;main.c: 175:         tx_status = CAN1_Transmit(TXQ, &msg_tx);
-[e = _tx_status ( _CAN1_Transmit (2 , . `E23361 0 &U _msg_tx ]
-"176
-[; ;main.c: 176:     }
-}
-[e :U 3326 ]
-"177
-[; ;main.c: 177:     return;
-[e $UE 3325  ]
-"178
-[; ;main.c: 178: }
-[e :UE 3325 ]
+[e :U 3307 ]
+[e $U 3308  ]
+[e :U 3309 ]
+"96
+[; ;main.c: 96: }
+[e :UE 3306 ]
 }

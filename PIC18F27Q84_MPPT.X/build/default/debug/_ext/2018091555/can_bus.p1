@@ -1,16 +1,74 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"2642 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h
-[s S3118 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3118 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
-"2641
-[u S3117 `S3118 1 ]
-[n S3117 . . ]
-"2653
-[v _LATCbits `VS3117 ~T0 @X0 0 e@1216 ]
-[v F205 `(v ~T0 @X0 1 tf1`ul ]
-"20 C:\Program Files\Microchip\xc8\v3.00\pic\include/builtins.h
-[v __delay `JF205 ~T0 @X0 0 e ]
-[p i __delay ]
+"69 ../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h
+[; ;../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h: 69:     {
+[s S3300 :1 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3300 . idType frameType dlc formatType brs ]
+"66
+[; ;../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h: 66: {
+[u S3299 `uc 1 `S3300 1 ]
+[n S3299 . msgfields . ]
+"79
+[; ;../PIC18F27Q84_BASIC.X/mcc_generated_files/can_types.h: 79: {
+[s S3301 `ul 1 `S3299 1 `*uc 1 ]
+[n S3301 . msgId field data ]
+"27 ../PIC18F27Q84_BASIC.X/can_bus.h
+[; ;../PIC18F27Q84_BASIC.X/can_bus.h: 27: CAN_TX_MSG_REQUEST_STATUS tx_status ;
+[c E22869 0 1 2 3 .. ]
+[n E22869 . CAN_TX_MSG_REQUEST_SUCCESS CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR CAN_TX_MSG_REQUEST_BRS_ERROR CAN_TX_MSG_REQUEST_FIFO_FULL  ]
+"17
+[; ;../PIC18F27Q84_BASIC.X/can_bus.h: 17: struct Can_Errors {
+[s S3303 `uc 1 `uc 1 `uc 1 ]
+[n S3303 Can_Errors errors_tx errors_rx errors_busoff ]
+"404 ../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h
+[; ;../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h: 404: _Bool CAN1_IsTxErrorPassive(void);
+[v _CAN1_IsTxErrorPassive `(a ~T0 @X0 0 ef ]
+"570
+[; ;../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h: 570: _Bool CAN1_IsRxErrorPassive(void);
+[v _CAN1_IsRxErrorPassive `(a ~T0 @X0 0 ef ]
+"346
+[; ;../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h: 346: _Bool CAN1_IsBusOff(void);
+[v _CAN1_IsBusOff `(a ~T0 @X0 0 ef ]
+"29 C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/string.h
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/string.h: 29: void *memset (void *, int, size_t);
+[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
+"19 ../PIC18F27Q84_BASIC.X/can_bus.c
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 19:     msg_tx.field.formatType = CAN_2_0_FORMAT;
+[c E22865 0 1 .. ]
+[n E22865 . CAN_2_0_FORMAT CAN_FD_FORMAT  ]
+"20
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 20:     msg_tx.field.brs = CAN_NON_BRS_MODE;
+[c E22853 0 1 .. ]
+[n E22853 . CAN_NON_BRS_MODE CAN_BRS_MODE  ]
+"21
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 21:     msg_tx.field.frameType = CAN_FRAME_DATA;
+[c E22861 0 1 .. ]
+[n E22861 . CAN_FRAME_DATA CAN_FRAME_RTR  ]
+"22
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 22:     msg_tx.field.idType = CAN_FRAME_STD;
+[c E22857 0 1 .. ]
+[n E22857 . CAN_FRAME_STD CAN_FRAME_EXT  ]
+"23
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 23:     msg_tx.field.dlc = DLC_8;
+[c E22894 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 .. ]
+[n E22894 . DLC_0 DLC_1 DLC_2 DLC_3 DLC_4 DLC_5 DLC_6 DLC_7 DLC_8 DLC_12 DLC_16 DLC_20 DLC_24 DLC_32 DLC_48 DLC_64  ]
+"26
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 26:     if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))
+[c E22890 0 1 .. ]
+[n E22890 . CAN_TX_FIFO_FULL CAN_TX_FIFO_AVAILABLE  ]
+[c E22912 0 .. ]
+[n E22912 . TXQ  ]
+"771 ../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h
+[; ;../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h: 771: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
+[v _CAN1_TransmitFIFOStatusGet `(E22890 ~T0 @X0 0 ef1`CE22912 ]
+"290
+[; ;../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h: 290: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
+[v _CAN1_Transmit `(E22869 ~T0 @X0 0 ef2`CE22912`*S3301 ]
+"813
+[; ;../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h: 813: uint8_t CAN1_ReceivedMessageCountGet(void);
+[v _CAN1_ReceivedMessageCountGet `(uc ~T0 @X0 0 ef ]
+"231
+[; ;../PIC18F27Q84_BASIC.X/mcc_generated_files/can1.h: 231: _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
+[v _CAN1_Receive `(a ~T0 @X0 0 ef1`*S3301 ]
 "304 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 304: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3539,40 +3597,171 @@ Version 4.0 HI-TECH Software Intermediate Code
 "69910
 [; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f27q84.h: 69910: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"12 test.c
-[; ;test.c: 12: void led_test()
-[v _led_test `(v ~T0 @X0 1 ef ]
-"13
-[; ;test.c: 13: {
+"24 ../PIC18F27Q84_BASIC.X/can_bus.h
+[; ;../PIC18F27Q84_BASIC.X/can_bus.h: 24: CAN_MSG_OBJ msg_tx;
+[v _msg_tx `S3301 ~T0 @X0 1 e ]
+"25
+[; ;../PIC18F27Q84_BASIC.X/can_bus.h: 25: uint8_t tx_data[8];
+[v _tx_data `uc ~T0 @X0 -> 8 `i e ]
+"26
+[; ;../PIC18F27Q84_BASIC.X/can_bus.h: 26: uint8_t tx_success;
+[v _tx_success `uc ~T0 @X0 1 e ]
+"27
+[; ;../PIC18F27Q84_BASIC.X/can_bus.h: 27: CAN_TX_MSG_REQUEST_STATUS tx_status ;
+[v _tx_status `E22869 ~T0 @X0 1 e ]
+"30
+[; ;../PIC18F27Q84_BASIC.X/can_bus.h: 30: CAN_MSG_OBJ msg_rx;
+[v _msg_rx `S3301 ~T0 @X0 1 e ]
+"31
+[; ;../PIC18F27Q84_BASIC.X/can_bus.h: 31: uint8_t rx_buff[DLC_8];
+[v _rx_buff `uc ~T0 @X0 -> 8 `i e ]
+"32
+[; ;../PIC18F27Q84_BASIC.X/can_bus.h: 32: uint8_t nrMsg;
+[v _nrMsg `uc ~T0 @X0 1 e ]
+"3 ../PIC18F27Q84_BASIC.X/can_bus.c
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 3: struct Can_Errors get_can_errors(){
+[v _get_can_errors `(S3303 ~T0 @X0 1 ef ]
 {
-[e :U _led_test ]
+[e :U _get_can_errors ]
 [f ]
-"14
-[; ;test.c: 14:     while(1)
-[e :U 3306 ]
-"15
-[; ;test.c: 15:     {
+"4
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 4:     struct Can_Errors can_errors;
+[v _can_errors `S3303 ~T0 @X0 1 a ]
+"5
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 5:     can_errors.errors_tx = CAN1_IsTxErrorPassive();
+[e = . _can_errors 0 -> ( _CAN1_IsTxErrorPassive ..  `uc ]
+"6
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 6:     can_errors.errors_rx = CAN1_IsRxErrorPassive();
+[e = . _can_errors 1 -> ( _CAN1_IsRxErrorPassive ..  `uc ]
+"7
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 7:     can_errors.errors_busoff = CAN1_IsBusOff();
+[e = . _can_errors 2 -> ( _CAN1_IsBusOff ..  `uc ]
+"8
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 8:     return can_errors;
+[e ) _can_errors ]
+[e $UE 3304  ]
+"9
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 9: }
+[e :UE 3304 ]
+}
+"11
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 11: void can_send(uint32_t id)
+[v _can_send `(v ~T0 @X0 1 ef1`ul ]
+"12
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 12: {
 {
-"17
-[; ;test.c: 17:     LATCbits.LATC3 = (LATCbits.LATC2) ? !LATCbits.LATC3 : LATCbits.LATC3 ;
-[e = . . _LATCbits 0 3 -> ? != -> . . _LATCbits 0 2 `i -> 0 `i : -> ! != -> . . _LATCbits 0 3 `i -> 0 `i `i -> . . _LATCbits 0 3 `i `uc ]
+[e :U _can_send ]
+"11
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 11: void can_send(uint32_t id)
+[v _id `ul ~T0 @X0 1 r1 ]
+"12
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 12: {
+[f ]
+"16
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 16:     memset( &msg_tx, 0 , sizeof(msg_tx));
+[e ( _memset (3 , , -> &U _msg_tx `*v -> 0 `i -> # _msg_tx `ui ]
 "18
-[; ;test.c: 18:     do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0);
-[e :U 3310 ]
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 18:     msg_tx.msgId = id;
+[e = . _msg_tx 0 _id ]
+"19
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 19:     msg_tx.field.formatType = CAN_2_0_FORMAT;
+[e = . . . _msg_tx 1 1 3 -> . `E22865 0 `uc ]
+"20
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 20:     msg_tx.field.brs = CAN_NON_BRS_MODE;
+[e = . . . _msg_tx 1 1 4 -> . `E22853 0 `uc ]
+"21
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 21:     msg_tx.field.frameType = CAN_FRAME_DATA;
+[e = . . . _msg_tx 1 1 1 -> . `E22861 0 `uc ]
+"22
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 22:     msg_tx.field.idType = CAN_FRAME_STD;
+[e = . . . _msg_tx 1 1 0 -> . `E22857 0 `uc ]
+"23
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 23:     msg_tx.field.dlc = DLC_8;
+[e = . . . _msg_tx 1 1 2 -> . `E22894 8 `uc ]
+"24
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 24:     msg_tx.data = tx_data;
+[e = . _msg_tx 2 &U _tx_data ]
+"26
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 26:     if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))
+[e $ ! == -> . `E22890 1 `ui & -> ( _CAN1_TransmitFIFOStatusGet (1 . `E22912 0 `ui -> . `E22890 1 `ui 3306  ]
+"27
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 27:     {
 {
-[e = . . _LATCbits 0 2 -> ~ -> . . _LATCbits 0 2 `i `uc ]
+"28
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 28:         tx_status = CAN1_Transmit(TXQ, &msg_tx);
+[e = _tx_status ( _CAN1_Transmit (2 , . `E22912 0 &U _msg_tx ]
+"29
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 29:     }
+}
+[e :U 3306 ]
+"30
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 30:     return;
+[e $UE 3305  ]
+"31
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 31: }
+[e :UE 3305 ]
+}
+"33
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 33: int can_receive()
+[v _can_receive `(i ~T0 @X0 1 ef ]
+"34
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 34: {
+{
+[e :U _can_receive ]
+[f ]
+"38
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 38:     nrMsg = CAN1_ReceivedMessageCountGet();
+[e = _nrMsg ( _CAN1_ReceivedMessageCountGet ..  ]
+"39
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 39:     if (nrMsg > 0)
+[e $ ! > -> _nrMsg `i -> 0 `i 3308  ]
+"40
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 40:     {
+{
+"41
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 41:         if(1 == CAN1_Receive(&msg_rx))
+[e $ ! == -> 1 `i -> ( _CAN1_Receive (1 &U _msg_rx `i 3309  ]
+"42
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 42:         {
+{
+"43
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 43:            for(uint8_t i=0; i<msg_rx.field.dlc; i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 3313  ]
+[e :U 3310 ]
+"44
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 44:            {
+{
+"45
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 45:              rx_buff[i] = msg_rx.data[i];
+[e = *U + &U _rx_buff * -> _i `ux -> -> # *U &U _rx_buff `ui `ux *U + . _msg_rx 2 * -> _i `ux -> -> # *U . _msg_rx 2 `ui `ux ]
+"46
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 46:            }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 3313 ]
+[e $ < -> _i `i -> . . . _msg_rx 1 1 2 `i 3310  ]
+[e :U 3311 ]
+}
+"47
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 47:            return msg_rx.field.dlc;
+[e ) -> . . . _msg_rx 1 1 2 `i ]
+[e $UE 3307  ]
+"48
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 48:         }
 }
 [e :U 3309 ]
-"19
-[; ;test.c: 19:     _delay((unsigned long)((1000)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"20
-[; ;test.c: 20:     }
+"49
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 49:     }
 }
-[e :U 3305 ]
-[e $U 3306  ]
-[e :U 3307 ]
-"21
-[; ;test.c: 21: }
-[e :UE 3304 ]
+[e :U 3308 ]
+"50
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 50:     return -1;
+[e ) -U -> 1 `i ]
+[e $UE 3307  ]
+"51
+[; ;../PIC18F27Q84_BASIC.X/can_bus.c: 51: }
+[e :UE 3307 ]
 }

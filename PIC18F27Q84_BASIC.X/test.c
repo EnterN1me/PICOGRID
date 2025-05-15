@@ -6,7 +6,7 @@
  */
 #include "test.h"
 
-void led_test()
+void led_test(void)
 {
 /*
  Test pic board hadware by making led blink
